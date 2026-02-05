@@ -12,48 +12,35 @@
 
     <meta property="og:title" content="The Nearly Ultimate Fallout Guide" />
     <meta property="og:type" content="article" />
-    <meta
-      property="og:description"
-      content="A complrehensive Fallout walkthrough."
-    />
-    <meta property="og:determiner" content="" />
+
     <meta property="og:locale" content="en_US" />
     <meta property="og:locale:alternate" content="en_CA" />
     <meta property="og:locale:alternate" content="en_GB" />
 
     <link href="Fallout1_Walkthrough_files/style.css" rel="stylesheet" />
 
-    <script>
-      function toggleTheme() {
-        var body = document.getElementsByTagName("body")[0];
-        var button = document.getElementById("themeButton");
-        if (body.classList.contains("dark")) {
-          body.classList.remove("dark");
-          button.innerHTML = "use dark theme";
-        } else {
-          body.classList.add("dark");
-          button.innerHTML = "use light theme";
-        }
-      }
-    </script>
+    <script src="Fallout1_Walkthrough_files/dark_mode.js" defer></script>
   </head>
 
   <body>
     <div class="container">
-      <form action="#contents">
-        <input type="submit" value="to index" class="btn btn-to-top" />
-      </form>
+      <a class="btn btn-to-top" href="#contents">to index</a>
 
       <h1>The Nearly Ultimate Fallout Guide</h1>
-      <br />
-      <button id="themeButton" onclick="toggleTheme()" class="btn">
-        use dark theme
-      </button>
-      &nbsp; <a href="original-source.html">view original</a><br /><br /><br />
-      <b
-        >Version 1.1.1<br />
-        Written and coded by Per Jorner</b
-      >
+
+      <p>
+        <button id="themeButton" onclick="toggleTheme()" class="btn">
+          use dark theme
+        </button>
+        &nbsp; <a href="original-source.html">view original</a>
+      </p>
+
+      <p>
+        <b
+          >Version 1.1.1<br />
+          Written and coded by Per Jorner</b
+        >
+      </p>
 
       <p>
         <em
@@ -73,7 +60,7 @@
 
       <p></p>
       <hr />
-      <h3>Table of contents</h3>
+      <h3 id="contents">Table of contents</h3>
       <ol type="I" id="contents" class="index">
         <li><a href="#intro">Introduction</a></li>
         <li><a href="#prep">Preparations</a></li>
@@ -106,11 +93,11 @@
       <hr />
 
       <h3 id="intro">Introduction</h3>
+
       <blockquote class="opening-quote">
         "I must digest this information."<br />
         --The Master
       </blockquote>
-
 
       <p>
         It began with the making of a very thorough <em>Fallout 2</em> guide,
@@ -210,11 +197,11 @@
       <hr />
 
       <h3 id="prep">Preparations</h3>
+
       <blockquote class="opening-quote">
         "It's always patch you up! Fix you up! Asshole!"<br />
         --Doctor Wu
       </blockquote>
-
 
       <p>
         The first thing you should do is make sure that your asshole... err, I
@@ -265,18 +252,20 @@
         explanation.
       </blockquote>
 
+      <p>
+        Save often! Ideally you should quicksave after every battle and before
+        every conversation. Having to play even a few minutes' worth of shootin'
+        and lootin' all over again because you made the wrong choice in a
+        dialogue can be irksome. (Of course it may also happen that you realize
+        only afterwards that you've done something wrong and wish you had
+        <em>not</em> saved...) I'd also recommend keeping a save game slot for
+        each time you enter a new major location (town etc.). This way if you
+        really screw up somehow and only find out after you save (it can
+        happen), you "only" have to replay that area. These saves can also come
+        in handy later on if you want to see what would have happened if you'd
+        done differently in a particular quest.
+      </p>
 
-      <p></p>Save often! Ideally you should quicksave after every battle and before
-      every conversation. Having to play even a few minutes' worth of shootin'
-      and lootin' all over again because you made the wrong choice in a dialogue
-      can be irksome. (Of course it may also happen that you realize only
-      afterwards that you've done something wrong and wish you had
-      <em>not</em> saved...) I'd also recommend keeping a save game slot for
-      each time you enter a new major location (town etc.). This way if you
-      really screw up somehow and only find out after you save (it can happen),
-      you "only" have to replay that area. These saves can also come in handy
-      later on if you want to see what would have happened if you'd done
-      differently in a particular quest.
       <blockquote class="green_star">
         A little word of warning about quicksave: as you probably know the
         quicksave function is "reset" when you use the regular load or save
@@ -307,13 +296,16 @@
         sessions; if you die, you're dead and have to start all over again!
       </blockquote>
 
-      Once you've started the game I'd change the following default settings:
-      combat speed, which I always turn up to max (check the box as well),
-      target highlight to "on" (helps you see what's happening to critters
-      behind walls), and running to "always". While working on the guide I had
-      difficulty set to normal, but any future games will be played on hard
-      (both game and combat difficulty), which unfortunately doesn't present
-      that much more of a challenge.
+      <p>
+        Once you've started the game I'd change the following default settings:
+        combat speed, which I always turn up to max (check the box as well),
+        target highlight to "on" (helps you see what's happening to critters
+        behind walls), and running to "always". While working on the guide I had
+        difficulty set to normal, but any future games will be played on hard
+        (both game and combat difficulty), which unfortunately doesn't present
+        that much more of a challenge.
+      </p>
+
       <blockquote class="red_star">
         If you hold down Shift and press the credits button on the starting
         screen, you'll get to read a quote file from the developers. Mature
@@ -343,24 +335,28 @@
       <hr />
 
       <h3 id="char">Character design</h3>
+
       <blockquote class="opening-quote">
         "Many of yours. Some useful, but too many twists."<br />
         --Set
       </blockquote>
 
-      I'll be going through stats, traits, skills and stuff, making harsh and
-      dictatorlike judgements, and then follow up with a few resulting
-      characters. To start off with, your age doesn't matter; it's not checked
-      in any of the scripts. Gender will have a small but insignificant effect
-      on some dialogues. Male characters can sleep with Sinthia (for a price)
-      and maybe with Keri (for a minor benefit). They may also be taken for
-      Death Hand in the raider camp, which is not necessarily an advantage. If
-      you are female then getting the systolic motivator from Michael will be
-      easier if you have CH&gt;5 but harder if you have CH&lt;5. You may have
-      been meant to be able to pull a surprise attack on Harry with a female
-      character, but all this does is initiate combat. A funny detail is that
-      the Vault 13 security officer is always of the opposite gender to the
-      player character.
+      <p>
+        I'll be going through stats, traits, skills and stuff, making harsh and
+        dictatorlike judgements, and then follow up with a few resulting
+        characters. To start off with, your age doesn't matter; it's not checked
+        in any of the scripts. Gender will have a small but insignificant effect
+        on some dialogues. Male characters can sleep with Sinthia (for a price)
+        and maybe with Keri (for a minor benefit). They may also be taken for
+        Death Hand in the raider camp, which is not necessarily an advantage. If
+        you are female then getting the systolic motivator from Michael will be
+        easier if you have CH&gt;5 but harder if you have CH&lt;5. You may have
+        been meant to be able to pull a surprise attack on Harry with a female
+        character, but all this does is initiate combat. A funny detail is that
+        the Vault 13 security officer is always of the opposite gender to the
+        player character.
+      </p>
+
       <blockquote class="green_star">
         Don't use any of the pre-defined characters, they all have flaws (e.g.
         Max Stone has Bruiser, Natalia has Night Person and Albert has Skilled
@@ -409,6 +405,7 @@
           with less than 5 (or you won't get Better Criticals).
         </li>
       </ul>
+
       <blockquote class="green_star">
         Stats can never be effectively raised above 10. Every stat can be raised
         by 1 permanently during the game (except ST which goes up by 4), so
@@ -482,6 +479,7 @@
           challenge of balancing your stats.
         </li>
       </ul>
+
       <blockquote class="green_star">
         If you raise your stats with Bruiser, Small Frame or Gifted, you can
         redistribute the extra point(s) manually, so think of them as extra
@@ -490,7 +488,7 @@
         certain values, but that should never be a problem).
       </blockquote>
 
-      Potentially useful but not overly worthwhile traits:
+      <p>Potentially useful but not overly worthwhile traits:</p>
       <ul>
         <li>
           <strong>Heavy Handed:</strong> Some extra damage early on for HtH
@@ -554,6 +552,7 @@
           reload as often).
         </li>
       </ul>
+
       <blockquote class="green_star">
         Skilled is bugged in the way that you don't get the extra 5 skill points
         per level you're supposed to get. If you want to simulate this effect
@@ -654,6 +653,7 @@
         </li>
         <li><strong>Outdoorsman:</strong> See Science.</li>
       </ul>
+
       <blockquote class="green_star">
         Your number of available skill points are capped at 99 when you level
         up. You can have more than 99 points stored (e.g. after getting a skill
@@ -706,16 +706,19 @@
         quest.
       </blockquote>
 
-      As a rule, it's not worth it to raise most skills above 100%. Combat
-      skills can be improved beyond that for an extra edge until you reach the
-      point where you get the maximum 95% chance to hit against all opponents
-      and from any reasonable range (which takes a bit longer if you practice
-      the art of aimed shots or blows). Even if you raise Sneak and Steal to
-      their maximum values you'll still get caught a <em>lot</em>, suggesting
-      your chance of success is capped at 95% before negative modifiers are
-      applied (in fact, testing shows no significant difference between Steal
-      30% and Steal 200% under pretty normal circumstances). Note however that
-      it doesn't cost more skill points to raise a skill at high skill levels.
+      <p>
+        As a rule, it's not worth it to raise most skills above 100%. Combat
+        skills can be improved beyond that for an extra edge until you reach the
+        point where you get the maximum 95% chance to hit against all opponents
+        and from any reasonable range (which takes a bit longer if you practice
+        the art of aimed shots or blows). Even if you raise Sneak and Steal to
+        their maximum values you'll still get caught a <em>lot</em>, suggesting
+        your chance of success is capped at 95% before negative modifiers are
+        applied (in fact, testing shows no significant difference between Steal
+        30% and Steal 200% under pretty normal circumstances). Note however that
+        it doesn't cost more skill points to raise a skill at high skill levels.
+      </p>
+
       <h4>Perks</h4>
       The three top perks:
       <ul>
@@ -729,6 +732,7 @@
           this is so good. Well, it's good regardless.
         </li>
       </ul>
+
       <blockquote class="green_star">
         If you don't have the stats to meet the requirements of a perk you can
         in some cases use drugs to raise them temporarily and get the perk (it
@@ -740,7 +744,7 @@
         new one.
       </blockquote>
 
-      Recommended perks (number of ranks in parentheses):
+      <p>Recommended perks (number of ranks in parentheses):</p>
       <ul>
         <li>
           <strong>Action Boy (3):</strong> Good for most characters. Depends on
@@ -766,6 +770,7 @@
           you'll only get to use it at the very end of the game if at all.
         </li>
       </ul>
+
       <blockquote class="green_star">
         Michal Burger puts in: "The Bonus Move perk is for an HtH character far
         superior to Action Boy/Girl, which you suggested, because your enemies
@@ -786,7 +791,7 @@
         have extra movement AP left.
       </blockquote>
 
-      Possibly useful but not crucial perks:
+      <p>Possibly useful but not crucial perks:</p>
       <ul>
         <li><strong>Dodger (2):</strong> Protection is good.</li>
         <li>
@@ -803,6 +808,7 @@
           points on Endurance is not, so take Buffout if you want this).
         </li>
       </ul>
+
       <blockquote class="green_star">
         You can play a little trick with the Tag! perk. When you use it to tag a
         skill, it will raise the skill level by the same amount you already
@@ -822,7 +828,7 @@
         investing skill points, reading books or getting one-shot bonuses.
       </blockquote>
 
-      Perks I rather doubt the usefulness of:
+      <p>Perks I rather doubt the usefulness of:</p>
       <ul>
         <li>
           <strong>Bonus HtH Damage (3):</strong> Should have been a lot more
@@ -869,6 +875,7 @@
           but spending perks to do it is. Especially if you have an NPC.
         </li>
       </ul>
+
       <blockquote class="green_star">
         The Lifegiver perk gives you 4 extra HP for each new level in addition
         to the 4 HP you get just for taking the perk (the manual forgets to say
@@ -882,8 +889,11 @@
         you have to pass directly in front of them).
       </blockquote>
 
-      Useless perks which should only be chosen if you have no other options (or
-      really want to):
+      <p>
+        Useless perks which should only be chosen if you have no other options
+        (or really want to):
+      </p>
+
       <ul>
         <li><strong>Animal Friend:</strong> Well, how useful is this.</li>
         <li>
@@ -975,6 +985,7 @@
           to gain more levels?
         </li>
       </ul>
+
       <blockquote class="green_star">
         The effective size of the discount granted by Master Trader varies
         between shops, roughly in a 15-30% range. This is probably because
@@ -1151,6 +1162,7 @@
           accident.
         </li>
       </ul>
+
       <blockquote class="green_star">
         Although you get the Childkiller reputation after killing one child,
         you'll need to kill three before the people of the wasteland actually
@@ -1164,10 +1176,13 @@
         reputation.
       </blockquote>
 
-      For most characters the reaction system is entirely forgettable. It is in
-      fact impossible to get a bad reaction even with CH 1 unless you have
-      Childkiller or Berserker, have negative karma, or go out of your way to
-      insult people. The factors involved can be summed up like this:
+      <p>
+        For most characters the reaction system is entirely forgettable. It is
+        in fact impossible to get a bad reaction even with CH 1 unless you have
+        Childkiller or Berserker, have negative karma, or go out of your way to
+        insult people. The factors involved can be summed up like this:
+      </p>
+
       <ul>
         <li>Each point of CH: +5</li>
         <li>Each level of the Presence perk: +10</li>
@@ -1315,6 +1330,7 @@
       alive. Assuming you don't die in this manner, you can live with any kind
       of rem count and still run around with no penalty whatsoever. From what I
       can tell, there is never any permanent damage resulting from radiation.
+
       <blockquote class="red_star">
         In v1.0 your stats didn't reset properly after serious radiation
         conditions; instead they increased above their original values.
@@ -1323,19 +1339,22 @@
       <hr />
 
       <h3 id="areas">Area walkthrough</h3>
+
       <blockquote class="opening-quote">
         "I know who you are. You are walking death, a plague in human form.
         Where you step, blood flows like a river."<br />
         --Lasher
       </blockquote>
 
-      Each area walkthrough follows roughly the same pattern: first a general
-      run-down of important people to talk to and things to do that aren't
-      technically quests, then a numbered list of quests just as they're
-      presented in your Pipboy. This is not strictly a walkthrough in the "do
-      this, then do that" sense, but there's enough information and general
-      advice that you should be able to figure out how to do stuff, and have
-      more fun in the process.
+      <p>
+        Each area walkthrough follows roughly the same pattern: first a general
+        run-down of important people to talk to and things to do that aren't
+        technically quests, then a numbered list of quests just as they're
+        presented in your Pipboy. This is not strictly a walkthrough in the "do
+        this, then do that" sense, but there's enough information and general
+        advice that you should be able to figure out how to do stuff, and have
+        more fun in the process.
+      </p>
 
       <p>
         There are no "hidden" world map locations, i.e. they'll all be there for
@@ -1416,6 +1435,7 @@
           significant impact on the mule capacity of NPCs.
         </li>
       </ul>
+
       <blockquote class="blue_star">
         It should be noted that not all dialogue options described in this
         walkthrough will be available to a character with middling ability or
@@ -1480,17 +1500,20 @@
       <hr />
 
       <h3 id="v13">Vault 13</h3>
+
       <blockquote class="opening-quote">
         "Don't drink glowing water."<br />
         --The Vault Dweller
       </blockquote>
 
-      The game starts with a cutscene where the Overseer tells you to "be safe"
-      as he's kicking you out of the vault. Right. There's a vault door but you
-      can't get back in right away. Take the Knife and ammo from the corpse,
-      then kill as many rats as you want for practice and leave. You can use the
-      Knife to kill them, but I wouldn't worry about using the gun, if you
-      tagged Small Guns at any rate. You'll find plenty of ammo.
+      <p>
+        The game starts with a cutscene where the Overseer tells you to "be
+        safe" as he's kicking you out of the vault. Right. There's a vault door
+        but you can't get back in right away. Take the Knife and ammo from the
+        corpse, then kill as many rats as you want for practice and leave. You
+        can use the Knife to kill them, but I wouldn't worry about using the
+        gun, if you tagged Small Guns at any rate. You'll find plenty of ammo.
+      </p>
 
       <p>
         What equipment you start with depends slightly on your tag skills. Every
@@ -1521,16 +1544,19 @@
       you can enter the vault. The medic on level 1 will provide healing and
       remove radiation. If you hit him or kill any vault citizen he won't talk
       to you any more.
+
       <blockquote class="green_star">
         IN&lt;4: The medic will give you a Stimpak every time you talk to him.
         Infinite free Stimpaks!
       </blockquote>
 
-      On level 3, use Science on the computers in the room to the left for 350
-      xp from each - but if you fail an IN check you'll simply spend time
-      "surfing the interweb" and gain nothing. Ask the guard at the armoury
-      about locked doors (IN 6 and Speech needed) and tell her you need the
-      stuff and she'll let you in.
+      <p>
+        On level 3, use Science on the computers in the room to the left for 350
+        xp from each - but if you fail an IN check you'll simply spend time
+        "surfing the interweb" and gain nothing. Ask the guard at the armoury
+        about locked doors (IN 6 and Speech needed) and tell her you need the
+        stuff and she'll let you in.
+      </p>
 
       <p>
         The Overseer sits in the room to the right. You can talk to him and
@@ -1585,6 +1611,7 @@
           this happens you won't be able to finish quests 1 and 5 any more
           (though they're crossed out on your quest list). You then get quests 2
           and 3.
+
           <blockquote>
             <img
               height="12"
@@ -1628,7 +1655,6 @@
             gaining 8500 xp each round trip and increasing the time limit all
             the while. Hours and hours of bug exploitation fun.
           </blockquote>
-
         </li>
         <li>
           <strong>Find the Water Thief.</strong><br />
@@ -1649,6 +1675,7 @@
       <hr />
 
       <h3 id="shady">Shady Sands</h3>
+
       <blockquote class="opening-quote">
         "How about you and I... well, you know... get together."<br />
         "Listen... uh... but I... uh... I-I like guys, okay? Whew! Uh, excuse
@@ -1656,9 +1683,12 @@
         --The Vault Dweller and Tandi
       </blockquote>
 
-      On your way to Vault 15 you'll come across a conspicuous settlement. Talk
-      to Katrina by the gate for some game basics, and if you go through all the
-      available dialogue options in one go you'll gain 250 xp.
+      <p>
+        On your way to Vault 15 you'll come across a conspicuous settlement.
+        Talk to Katrina by the gate for some game basics, and if you go through
+        all the available dialogue options in one go you'll gain 250 xp.
+      </p>
+
       <blockquote class="red_star">
         The first time I played the game my character was a female named
         Katrina. The first person I talked to in the whole game was Katrina.
@@ -1667,16 +1697,19 @@
         Tandi's kidnapping and vice versa.
       </blockquote>
 
-      Razlo in the house to the southwest will tell you to stay away from his
-      bookcase o' stuff. Save and try anyway. He and his wife will both give you
-      two warnings before attacking, but with a little luck you can take all the
-      stuff without either noticing. Razlo will heal you for money. You can also
-      choose to barter for healing; if you leave the barter interface without
-      trading for the healing object, he'll try to charge you in cash. Once you
-      get a Scorpion Tail, give it to Razlo and he'll reward you with an
-      Antidote and 250 xp. For each tail you give him he'll turn it into an
-      Antidote, but it'll take some time. Next, use one Antidote on Jarvis in
-      the back for 400 xp.
+      <p>
+        Razlo in the house to the southwest will tell you to stay away from his
+        bookcase o' stuff. Save and try anyway. He and his wife will both give
+        you two warnings before attacking, but with a little luck you can take
+        all the stuff without either noticing. Razlo will heal you for money.
+        You can also choose to barter for healing; if you leave the barter
+        interface without trading for the healing object, he'll try to charge
+        you in cash. Once you get a Scorpion Tail, give it to Razlo and he'll
+        reward you with an Antidote and 250 xp. For each tail you give him he'll
+        turn it into an Antidote, but it'll take some time. Next, use one
+        Antidote on Jarvis in the back for 400 xp.
+      </p>
+
       <blockquote class="green_star">
         You can get the medical barter items in your inventory by putting them
         in a container (see Raiders for a note on this). If you do this, Razlo
@@ -1696,17 +1729,19 @@
         isn't that deeply rooted after all.
       </blockquote>
 
-      Talk to Ian in the house to the northeast. Unless you go out of your way
-      to anger him he'll consider joining you for $100, but if you offer him "a
-      piece of the action" (IN 6) and pass a Speech check he'll come along for
-      free. If you get a good reaction (which at this early stage essentially
-      means CH 9 and telling him you're sorry about his injury) he'll readily
-      join you. It doesn't matter much since it will all be your stuff to
-      redistribute anyway, including the $100; the tricky part about paying him
-      is that you won't have any money at all when you first get here, so you'll
-      have to steal or barter the sum from various peasants (and Ian himself).
-      You get 100 xp when Ian joins you, and in any case he can reveal the
-      locations of Junktown and the Hub.
+      <p>
+        Talk to Ian in the house to the northeast. Unless you go out of your way
+        to anger him he'll consider joining you for $100, but if you offer him
+        "a piece of the action" (IN 6) and pass a Speech check he'll come along
+        for free. If you get a good reaction (which at this early stage
+        essentially means CH 9 and telling him you're sorry about his injury)
+        he'll readily join you. It doesn't matter much since it will all be your
+        stuff to redistribute anyway, including the $100; the tricky part about
+        paying him is that you won't have any money at all when you first get
+        here, so you'll have to steal or barter the sum from various peasants
+        (and Ian himself). You get 100 xp when Ian joins you, and in any case he
+        can reveal the locations of Junktown and the Hub.
+      </p>
 
       <p>
         If you talk to Tandi and manage a favourable reaction she can put
@@ -1726,14 +1761,17 @@
         every time their map loads.
       </blockquote>
 
-      Over by the garden there's basically just one thing to do except pick
-      stuff up (and toss caps into the well): talk to Curtis the farmer. You'll
-      get 500 xp if you tell him about crop rotation. If you don't have the
-      Science 40% needed for the speech option, you can get the xp by either
-      entering and leaving the tell-me-about interface or entering and leaving
-      the barter screen, even if you do nothing in either. This is seemingly
-      because doing so triggers the script variable used to check if you told
-      him.
+      <p>
+        Over by the garden there's basically just one thing to do except pick
+        stuff up (and toss caps into the well): talk to Curtis the farmer.
+        You'll get 500 xp if you tell him about crop rotation. If you don't have
+        the Science 40% needed for the speech option, you can get the xp by
+        either entering and leaving the tell-me-about interface or entering and
+        leaving the barter screen, even if you do nothing in either. This is
+        seemingly because doing so triggers the script variable used to check if
+        you told him.
+      </p>
+
       <ol>
         <li>
           <strong>Rescue Tandi from the Raiders.</strong><br />
@@ -1745,6 +1783,7 @@
           leaving. If you tell him Tandi's been kidnapped and that you're
           looking for her, he'll give you 2 Stimpaks and 1 Fruit, and if you
           already delivered at least one tail to him you also get one Antidote.
+
           <blockquote>
             <img
               height="12"
@@ -1756,10 +1795,13 @@
             after 19.00.
           </blockquote>
 
-          Go to the Raiders. Opening the door to Tandi's cell will alarm the
-          guard in the corridor, so you'll probably have to talk to Garl. There
-          are several ways to effect Tandi's release:<br />
-          <br />
+          <p>
+            Go to the Raiders. Opening the door to Tandi's cell will alarm the
+            guard in the corridor, so you'll probably have to talk to Garl.
+            There are several ways to effect Tandi's release:<br />
+            <br />
+          </p>
+
           <ul style="list-style-type: disc">
             <li>
               If Garl thinks you're his father you can tell him to release Tandi
@@ -1789,6 +1831,7 @@
               Use Sneak, unlock and open Tandi's door, talk to her and leave.
             </li>
           </ul>
+
           <blockquote>
             <img
               height="12"
@@ -1830,13 +1873,17 @@
             to keep the head.
           </blockquote>
 
-          You get 500 xp for freeing Tandi, minus 50 xp for every raider you
-          killed to free her (including if you killed Garl in single combat).
-          She'll stick with you as an NPC until you deliver her back to Shady
-          Sands (400 xp and $500 from Aradesh), but she's not overly useful.
-          Strangely enough, if she dies on the way back the people in Shady
-          Sands won't have a word to say on the subject. When you return to the
-          raiders next time they'll be hostile no matter how you freed her.
+          <p>
+            You get 500 xp for freeing Tandi, minus 50 xp for every raider you
+            killed to free her (including if you killed Garl in single combat).
+            She'll stick with you as an NPC until you deliver her back to Shady
+            Sands (400 xp and $500 from Aradesh), but she's not overly useful.
+            Strangely enough, if she dies on the way back the people in Shady
+            Sands won't have a word to say on the subject. When you return to
+            the raiders next time they'll be hostile no matter how you freed
+            her.
+          </p>
+
           <blockquote>
             <img
               height="12"
@@ -1850,7 +1897,6 @@
             case, you get the 400 xp when you leave to the west side as long as
             you don't kill her.
           </blockquote>
-
         </li>
         <li>
           <strong>Stop the Radscorpions.</strong><br />
@@ -1870,6 +1916,7 @@
           means you get 1250 xp if you just go in, blow up the place and leave,
           but killing the scorpions first yields more xp. Beware that if you're
           caught on the wrong side when the wall caves in, you're dead.
+
           <blockquote>
             <img
               height="12"
@@ -1897,21 +1944,24 @@
             not. You can open a lot of (wooden) doors and forcefields in the
             game using explosives, but you shouldn't make a habit out of it.
           </blockquote>
-
         </li>
       </ol>
       <hr />
 
       <h3 id="v15">Vault 15</h3>
+
       <blockquote class="opening-quote">
         "Squeak!"<br />
         --Rat
       </blockquote>
 
-      Make sure you bring one of the free Ropes from Shady Sands. Go down the
-      manhole. Shoot the rats. Take the stuff from the lockers. Note that there
-      are many items on the ground in this location, starting with 2 Flares near
-      the elevator. Use the Rope on the elevator shaft and climb down.
+      <p>
+        Make sure you bring one of the free Ropes from Shady Sands. Go down the
+        manhole. Shoot the rats. Take the stuff from the lockers. Note that
+        there are many items on the ground in this location, starting with 2
+        Flares near the elevator. Use the Rope on the elevator shaft and climb
+        down.
+      </p>
 
       <p>
         Shoot more rats. There's some stuff to be had, including a Leather
@@ -1930,6 +1980,7 @@
       <hr />
 
       <h3 id="raiders">Raiders</h3>
+
       <blockquote class="opening-quote">
         "We give them the most important thing possible. We give their dreary
         lives excitement."<br />
@@ -1937,10 +1988,12 @@
         --Alya and the Vault Dweller
       </blockquote>
 
-      The raiders won't be aggressive when you first come here unless you flash
-      weapons around. You can talk to the ones in the tents, but it doesn't do
-      much. If you try to loot the containers inside the house you'll be
-      attacked.
+      <p>
+        The raiders won't be aggressive when you first come here unless you
+        flash weapons around. You can talk to the ones in the tents, but it
+        doesn't do much. If you try to loot the containers inside the house
+        you'll be attacked.
+      </p>
 
       <p>
         If you come here before Tandi is kidnapped, you can ask Garl if you can
@@ -1970,21 +2023,26 @@
       <hr />
 
       <h3 id="junk">Junktown</h3>
+
       <blockquote class="opening-quote">
         "Have a good day. And I am sorry about the bastards part, OK?"<br />
         "It's going to cause me some severe mental trauma."<br />
         --Kalnor and the Vault Dweller
       </blockquote>
 
-      If you come here at night, you get one chance to ask nicely to be let in
-      (IN 5 and a Speech check), or you'll have to wait until morning. If you
-      step inside without permission Kalnor will come running to attack, but if
-      you just run to the northern exit grid he won't be hostile when you return
-      (this will not work if Ian is with you). Once you're inside, you can talk
-      to Lars for some information and a quest. The guard outside the jail will
-      attack if you use Lockpick on the door twice (picking this lock is
-      <em>easier</em> without Lock Picks). Avoid sneaking in the presence of the
-      guards since it will also tick them off if done repeatedly.
+      <p>
+        If you come here at night, you get one chance to ask nicely to be let in
+        (IN 5 and a Speech check), or you'll have to wait until morning. If you
+        step inside without permission Kalnor will come running to attack, but
+        if you just run to the northern exit grid he won't be hostile when you
+        return (this will not work if Ian is with you). Once you're inside, you
+        can talk to Lars for some information and a quest. The guard outside the
+        jail will attack if you use Lockpick on the door twice (picking this
+        lock is <em>easier</em> without Lock Picks). Avoid sneaking in the
+        presence of the guards since it will also tick them off if done
+        repeatedly.
+      </p>
+
       <blockquote class="green_star">
         Note that once you've talked to Kalnor during night hours, the outcome
         determines for the duration of the game whether he considers you to have
@@ -2011,15 +2069,18 @@
         steal all his stuff without fear or trespass all you want.
       </blockquote>
 
-      Doc Morbid will heal you for money (HP and poison). If you're not hurt
-      he'll charge you $10 and attack if you won't pay. Go down into the
-      basement and talk to the midget. Get him to reveal the nature of Doc
-      Morbid's business. The locker is both locked and trapped and will
-      disintegrate if you open it before disarming the trap (which can be done
-      with a low Traps skill) or if you set off the trap while disarming it. You
-      can confront Doc Morbid with your findings, but nothing much happens. If
-      you killed the midget, the people upstairs will turn hostile (but the
-      police won't care if you kill them).
+      <p>
+        Doc Morbid will heal you for money (HP and poison). If you're not hurt
+        he'll charge you $10 and attack if you won't pay. Go down into the
+        basement and talk to the midget. Get him to reveal the nature of Doc
+        Morbid's business. The locker is both locked and trapped and will
+        disintegrate if you open it before disarming the trap (which can be done
+        with a low Traps skill) or if you set off the trap while disarming it.
+        You can confront Doc Morbid with your findings, but nothing much
+        happens. If you killed the midget, the people upstairs will turn hostile
+        (but the police won't care if you kill them).
+      </p>
+
       <blockquote class="green_star">
         If you have Katja with you, you can ask her to pick the lock after you
         examine the locker. She won't disarm the trap, though! You should have
@@ -2043,10 +2104,12 @@
         fair!
       </blockquote>
 
-      After 80 days have passed there'll be a member of the Children of the
-      Cathedral on the first Junktown map offering the same kind of healing for
-      money (HP and poison) as in Necropolis. He'll have displaced some poor
-      guy, but there's nothing you can do about that.
+      <p>
+        After 80 days have passed there'll be a member of the Children of the
+        Cathedral on the first Junktown map offering the same kind of healing
+        for money (HP and poison) as in Necropolis. He'll have displaced some
+        poor guy, but there's nothing you can do about that.
+      </p>
 
       <p>
         During the day you can buy stuff from Killian in the general store (use
@@ -2117,12 +2180,15 @@
         anyway.
       </blockquote>
 
-      If Killian catches you in his room, spots you tampering with the door
-      while he's out in the store, or notices a Steal attempt on the tables, you
-      may have to go to jail. Wait there for a day and they'll let you out
-      again. If you pick the lock and step outside you'll gain 250 xp, but the
-      guards will be hostile. Might as well do this first if you're going to
-      kill Killian anyway (which always earns you 600 xp).
+      <p>
+        If Killian catches you in his room, spots you tampering with the door
+        while he's out in the store, or notices a Steal attempt on the tables,
+        you may have to go to jail. Wait there for a day and they'll let you out
+        again. If you pick the lock and step outside you'll gain 250 xp, but the
+        guards will be hostile. Might as well do this first if you're going to
+        kill Killian anyway (which always earns you 600 xp).
+      </p>
+
       <blockquote class="green_star">
         Each time you are sent to jail - even if it's just to keep you out of
         the way when Killian deals with Gizmo - you are fined $100 and lose 1
@@ -2138,10 +2204,12 @@
         bad karma.
       </blockquote>
 
-      Marcelles at the Crash House will let you rent a room for $25 a day or
-      $150 for a week. Each time you rest in your room you regain 10-15 HP. You
-      can also pay her $50 for nothing. If you open the fridge more than once
-      without being a paying customer she'll attack.
+      <p>
+        Marcelles at the Crash House will let you rent a room for $25 a day or
+        $150 for a week. Each time you rest in your room you regain 10-15 HP.
+        You can also pay her $50 for nothing. If you open the fridge more than
+        once without being a paying customer she'll attack.
+      </p>
 
       <p>
         On the third Junktown map you'll find an angry dog. If you talk to Phil
@@ -2158,13 +2226,16 @@
         to get him for an NPC.
       </blockquote>
 
-      You can gamble in Gizmo's casino. I wouldn't (it's not as if you're short
-      on resources or anything). If you do, talk to a roulette dealer, weigh
-      down the 1 and 4 keys and wait a few minutes for your cash reserves to
-      increase by tens of thousands of caps. You can do this with a middling
-      Gambling level, say, 50% (Luck is also a small factor). Avoid the slot
-      machines, the bets are lower and the odds worse. Don't flash guns in front
-      of the casino guards or they'll be miffed.
+      <p>
+        You can gamble in Gizmo's casino. I wouldn't (it's not as if you're
+        short on resources or anything). If you do, talk to a roulette dealer,
+        weigh down the 1 and 4 keys and wait a few minutes for your cash
+        reserves to increase by tens of thousands of caps. You can do this with
+        a middling Gambling level, say, 50% (Luck is also a small factor). Avoid
+        the slot machines, the bets are lower and the odds worse. Don't flash
+        guns in front of the casino guards or they'll be miffed.
+      </p>
+
       <blockquote class="green_star">
         Tom Jansen notes: "In Gizmo's casino, you can find a guy dressed in
         metal armour in the second room. To get his armour you need an NPC with
@@ -2180,15 +2251,18 @@
         but no one else will.
       </blockquote>
 
-      If you feel like it, you can talk to Gizmo and get the job to kill
-      Killian. He'll offer $1000, but with IN 6 you can ask for $1500 and always
-      get it. Return after whacking Killian and you get your reward (he'll only
-      ask for the Dog Tags if you haven't done it). If you killed Killian before
-      talking to Gizmo you get the $1000 reward. You must click on Izo to get
-      the money. You can imagine that this turns the guards and citizens of
-      Junktown hostile if not done subtly. If you kill Gizmo on your own you get
-      600 xp for it and the guards won't turn hostile, but Lars won't talk to
-      you afterwards which could affect quest 3.
+      <p>
+        If you feel like it, you can talk to Gizmo and get the job to kill
+        Killian. He'll offer $1000, but with IN 6 you can ask for $1500 and
+        always get it. Return after whacking Killian and you get your reward
+        (he'll only ask for the Dog Tags if you haven't done it). If you killed
+        Killian before talking to Gizmo you get the $1000 reward. You must click
+        on Izo to get the money. You can imagine that this turns the guards and
+        citizens of Junktown hostile if not done subtly. If you kill Gizmo on
+        your own you get 600 xp for it and the guards won't turn hostile, but
+        Lars won't talk to you afterwards which could affect quest 3.
+      </p>
+
       <blockquote class="green_star">
         If you save and reload in between talking to Gizmo and Izo, you won't
         get the reward since it's governed by a local variable that doesn't get
@@ -2227,11 +2301,13 @@
         not always be possible.
       </blockquote>
 
-      Talk to Saul the boxer, ask him why he stays in Junktown, and if you've
-      talked to Trish you can say she's worried about him to gain 250 xp. You
-      can bet on his boxing fights every three days before 14.00, but there's
-      not much point to it (the expected payback, if positive, is extremely
-      small). Although it's funny when he fights the radscorpion.
+      <p>
+        Talk to Saul the boxer, ask him why he stays in Junktown, and if you've
+        talked to Trish you can say she's worried about him to gain 250 xp. You
+        can bet on his boxing fights every three days before 14.00, but there's
+        not much point to it (the expected payback, if positive, is extremely
+        small). Although it's funny when he fights the radscorpion.
+      </p>
 
       <p>
         The Skum Pitt opens at 16.00 (you may have to rest a few more minutes
@@ -2281,6 +2357,7 @@
           which will knock him out if you make a Sneak check (400 xp). If you
           rescued Sinthia, Marcelles will give you an extra night's sleep for
           free.
+
           <blockquote>
             <img
               height="12"
@@ -2306,7 +2383,6 @@
             time. Each time you sleep with her you must make an IN check or
             become "addicted". Ho hum.
           </blockquote>
-
         </li>
         <li>
           <strong>Stop Gizmo.</strong><br />
@@ -2345,6 +2421,7 @@
           you asked for money or not) will be yours. Go take stuff from Gizmo's
           body. You won't be able to gamble any more (in fact everyone
           disappears from the casino), but who cares really.
+
           <blockquote>
             <img
               height="12"
@@ -2382,7 +2459,6 @@
             about Gizmo and say he only <em>tried</em> to hire you; Killian will
             then offer you the job as usual.
           </blockquote>
-
         </li>
         <li>
           <strong>Bust the Skulz gang.</strong><br />
@@ -2393,6 +2469,7 @@
           ask her to testify against the Skulz. Then go and tell Lars, and
           you'll earn 500 xp. If you visit Sherry and tell her you're not doing
           so good she'll give you food which heals 1 HP.
+
           <blockquote>
             <img
               height="12"
@@ -2404,15 +2481,18 @@
             hee! Ho ho ha!
           </blockquote>
 
-          Another way is a little more complicated, but yields more xp. Go to
-          the Skum Pitt after 16.00 and talk to Neal. Shortly after you end
-          conversation one of the Skulz will hit Trish, and Neal kills him.
-          After this has happened you can go to Vinnie and tell him you want to
-          join the Skulz. Get the Urn as described above; you get 400 xp for
-          showing it to Vinnie (but you can't do this if Neal is dead). Next
-          they'll want you to come along and help kill Neal. You get 300 xp when
-          Neal and Trish are dead, as well as the enmity of Junktown even if you
-          didn't do anything yourself.
+          <p>
+            Another way is a little more complicated, but yields more xp. Go to
+            the Skum Pitt after 16.00 and talk to Neal. Shortly after you end
+            conversation one of the Skulz will hit Trish, and Neal kills him.
+            After this has happened you can go to Vinnie and tell him you want
+            to join the Skulz. Get the Urn as described above; you get 400 xp
+            for showing it to Vinnie (but you can't do this if Neal is dead).
+            Next they'll want you to come along and help kill Neal. You get 300
+            xp when Neal and Trish are dead, as well as the enmity of Junktown
+            even if you didn't do anything yourself.
+          </p>
+
           <blockquote>
             <img
               height="12"
@@ -2428,17 +2508,20 @@
             map when you first talk to Neal, the sequence will never happen.
           </blockquote>
 
-          The more decent-like option is to say you need time to prepare and go
-          tell Lars what's up. You can let him and the guards take out the
-          Skulz, in which case you get nothing. Or you can agree to help, which
-          again means a fight at the Skum Pitt. This time you'll have a bunch of
-          Junktown guards to help you out. When the Skulz are killed you get 300
-          xp for turning against them, and if you talk to Lars you get another
-          500 xp. You can still choose the evil path after calling for the
-          guards, it just means you have to kill all of them too before you get
-          the xp for killing Neal. If you turn against the Skulz without talking
-          to Lars first you get the same 800 xp, the only difference being there
-          will be no guards at the fight.
+          <p>
+            The more decent-like option is to say you need time to prepare and
+            go tell Lars what's up. You can let him and the guards take out the
+            Skulz, in which case you get nothing. Or you can agree to help,
+            which again means a fight at the Skum Pitt. This time you'll have a
+            bunch of Junktown guards to help you out. When the Skulz are killed
+            you get 300 xp for turning against them, and if you talk to Lars you
+            get another 500 xp. You can still choose the evil path after calling
+            for the guards, it just means you have to kill all of them too
+            before you get the xp for killing Neal. If you turn against the
+            Skulz without talking to Lars first you get the same 800 xp, the
+            only difference being there will be no guards at the fight.
+          </p>
+
           <blockquote>
             <img
               height="12"
@@ -2496,27 +2579,33 @@
             won't be on your side and will turn on you if you attack the Skulz.
           </blockquote>
 
-          Note that you can't finish the quest simply by killing the gang at the
-          Crash House. Killing any of the Skulz but Sherry won't turn the guards
-          hostile, though.
+          <p>
+            Note that you can't finish the quest simply by killing the gang at
+            the Crash House. Killing any of the Skulz but Sherry won't turn the
+            guards hostile, though.
+          </p>
         </li>
       </ol>
       <hr />
 
       <h3 id="hub">The Hub</h3>
+
       <blockquote class="opening-quote">
         "Rats? You've got to be kidding me."<br />
         "No, really. BIG rats!"<br />
         --Butch and the Vault Dweller
       </blockquote>
 
-      When you arrive here you'll see lots of people getting ready to leave with
-      caravans. Depending on the time of day there will be one or two named
-      ones: Mat, Luke or John (where's Mark?). Talking to Mat and asking about
-      the carts will put Shady Sands, Junktown, Necropolis, the Brotherhood and
-      (for some reason) the Glow on your world map. There are a few other people
-      on this map who'll give you general information - Deputy Fry, Dan and
-      Gunther.
+      <p>
+        When you arrive here you'll see lots of people getting ready to leave
+        with caravans. Depending on the time of day there will be one or two
+        named ones: Mat, Luke or John (where's Mark?). Talking to Mat and asking
+        about the carts will put Shady Sands, Junktown, Necropolis, the
+        Brotherhood and (for some reason) the Glow on your world map. There are
+        a few other people on this map who'll give you general information -
+        Deputy Fry, Dan and Gunther.
+      </p>
+
       <blockquote class="green_star">
         If you become an outlaw in the Hub, you won't be able to leave combat
         mode while on a map with living Hub cops on it.
@@ -2533,14 +2622,16 @@
         there's no Mark Jr. around. A little bit of trivia...
       </blockquote>
 
-      Head downtown. At the Crimson Caravan you can take guard jobs. Caravans
-      leave on the 3rd and 17th to Junktown, Necropolis, the Brotherhood and the
-      Boneyard, and the pay is $600. Talk to Demetre again and tell him the
-      caravans aren't ready yet and he'll give you a Frag Grenade. Keri is the
-      one to talk to when the caravan is ready to leave. Male characters can hit
-      on her: if you are a Berserker, or if you have CH 7 <em>and</em> make a CH
-      check, you'll slip around the corner and she'll give you 1 Psycho, 1
-      Mentats and 1 Buffout afterwards.
+      <p>
+        Head downtown. At the Crimson Caravan you can take guard jobs. Caravans
+        leave on the 3rd and 17th to Junktown, Necropolis, the Brotherhood and
+        the Boneyard, and the pay is $600. Talk to Demetre again and tell him
+        the caravans aren't ready yet and he'll give you a Frag Grenade. Keri is
+        the one to talk to when the caravan is ready to leave. Male characters
+        can hit on her: if you are a Berserker, or if you have CH 7
+        <em>and</em> make a CH check, you'll slip around the corner and she'll
+        give you 1 Psycho, 1 Mentats and 1 Buffout afterwards.
+      </p>
 
       <p>General details on caravan jobs include:</p>
       <ul>
@@ -2579,6 +2670,7 @@
           Caravan brahmin are all "talking" ones (see the Encounters section).
         </li>
       </ul>
+
       <blockquote class="green_star">
         There is a scripting bug that is common to all three caravan houses.
         Talk to the caravan master on the day a caravan is due to leave and say
@@ -2587,11 +2679,13 @@
         from a newly spawned caravan leader.
       </blockquote>
 
-      The Far Go Traders send out caravans on the 8th, 18th and 28th to
-      Junktown, the Brotherhood and the Boneyard, paying $400 for each. Talk to
-      Rutger to get the job once you've accepted quest 3, and the caravaneer in
-      the same room when it's time to go. Butch will also put these locations on
-      your world map plus Necropolis.
+      <p>
+        The Far Go Traders send out caravans on the 8th, 18th and 28th to
+        Junktown, the Brotherhood and the Boneyard, paying $400 for each. Talk
+        to Rutger to get the job once you've accepted quest 3, and the
+        caravaneer in the same room when it's time to go. Butch will also put
+        these locations on your world map plus Necropolis.
+      </p>
 
       <p>
         The librarian will sell you an infinite amount of books, and a Vault
@@ -2617,17 +2711,20 @@
         will not replenish unless she has less than five.
       </blockquote>
 
-      Talk to Lorenzo and borrow $200. Then immediately return it, borrow $400
-      and so on, until you have $1000 from him. Now kill him and his two guards,
-      and you'll be able to take $2034 more from the locker in the back and some
-      other stuff from the shelves. The police don't mind. If you ask Lorenzo
-      about the Children, he'll put the Boneyard on your world map; if you ask
-      him about work he'll tell you about Decker. If you actually plan to pay
-      him back, the interest is 10% a day on the original loan. After 10 days
-      he'll be upset and want his money back; you can then try to fool him by
-      giving him less money than what is owed, or even give him all you have
-      (hint: drop all your money first). Lorenzo won't loan you any more money
-      once you've failed to pay him back in time.
+      <p>
+        Talk to Lorenzo and borrow $200. Then immediately return it, borrow $400
+        and so on, until you have $1000 from him. Now kill him and his two
+        guards, and you'll be able to take $2034 more from the locker in the
+        back and some other stuff from the shelves. The police don't mind. If
+        you ask Lorenzo about the Children, he'll put the Boneyard on your world
+        map; if you ask him about work he'll tell you about Decker. If you
+        actually plan to pay him back, the interest is 10% a day on the original
+        loan. After 10 days he'll be upset and want his money back; you can then
+        try to fool him by giving him less money than what is owed, or even give
+        him all you have (hint: drop all your money first). Lorenzo won't loan
+        you any more money once you've failed to pay him back in time.
+      </p>
+
       <blockquote class="green_star">
         Every time you talk to Lorenzo he will have $1000, $2000 or $3000 in his
         inventory (depending on how much you carry yourself); you can trade
@@ -2635,12 +2732,14 @@
         you fought Decker's people or if you pissed off Kane.
       </blockquote>
 
-      If you talk to Lemmy outside the Maltese Falcon you can buy pointless info
-      for lots of cash: a recommendation to Vance the chem dealer for $1000 (or
-      $800 with good Barter or CH), a completely useless clue on water chips for
-      $500 (or $400), and an equally useless clue on missing caravans for $300
-      (or $240). With a high ST you can intimidate him into giving you these
-      snippets for free.
+      <p>
+        If you talk to Lemmy outside the Maltese Falcon you can buy pointless
+        info for lots of cash: a recommendation to Vance the chem dealer for
+        $1000 (or $800 with good Barter or CH), a completely useless clue on
+        water chips for $500 (or $400), and an equally useless clue on missing
+        caravans for $300 (or $240). With a high ST you can intimidate him into
+        giving you these snippets for free.
+      </p>
 
       <p>
         Irwin standing in a building at the bottom of the map wants you to clear
@@ -2663,35 +2762,42 @@
         map transitions, but you don't have to pay much heed to it.
       </blockquote>
 
-      You can buy Iguana-on-a-sticks from Bob. If you know what they're actually
-      made of you can try a little blackmail and squeeze him for $50 to $200
-      every five days. This is worth 500 xp, but you'll have to wait five days
-      before collecting your first payment, which takes some ST or CH as well.
-      You can raise the amount by increments of $25 to $100, but if you go above
-      $250 then you won't be able to talk him into giving you more money if he
-      later decides he doesn't want to pay. Note that if you ever talk Bob into
-      a fight, the Hub guards will attack you and not him.
+      <p>
+        You can buy Iguana-on-a-sticks from Bob. If you know what they're
+        actually made of you can try a little blackmail and squeeze him for $50
+        to $200 every five days. This is worth 500 xp, but you'll have to wait
+        five days before collecting your first payment, which takes some ST or
+        CH as well. You can raise the amount by increments of $25 to $100, but
+        if you go above $250 then you won't be able to talk him into giving you
+        more money if he later decides he doesn't want to pay. Note that if you
+        ever talk Bob into a fight, the Hub guards will attack you and not him.
+      </p>
+
       <blockquote class="red_star">
         In v1.0 there was a bug so that you could collect your fee whenever you
         wanted and not just every five days.
       </blockquote>
 
-      Decker resides under the Maltese Falcon (where you can also gamble, same
-      deal as in Junktown). Once you get the quest to kill Hightower (or Jain),
-      you can go to Sheriff Greene and tell him about this. If you did kill the
-      person in question and fail a Speech check, Greene will be suspicious and
-      ask about your involvement, leading to another Speech check ("How dare you
-      accuse me!" is your best reply here). If you fail that one too, Greene
-      won't talk to you any more. If you passed either check, however, the
-      sheriff will ask you to come along and kill Decker (and will in fact do
-      nothing until you agree to do this). This battle is tough, not least
-      because of Kane who has four attacks per round and hits hard. I'd
-      recommend you have at least 50 HP and Combat Armor from Jacob before
-      attempting this, or take 2 Psycho. You can't leave the hideout until
-      Decker and Kane are both dead, but as soon as they are the others will
-      surrender. You get $300 from the sheriff when you agree to go, $1000 and
-      1400 xp when it's all taken care of. Remember to go and loot Decker's
-      place afterwards, and you can of course kill any remaining scum.
+      <p>
+        Decker resides under the Maltese Falcon (where you can also gamble, same
+        deal as in Junktown). Once you get the quest to kill Hightower (or
+        Jain), you can go to Sheriff Greene and tell him about this. If you did
+        kill the person in question and fail a Speech check, Greene will be
+        suspicious and ask about your involvement, leading to another Speech
+        check ("How dare you accuse me!" is your best reply here). If you fail
+        that one too, Greene won't talk to you any more. If you passed either
+        check, however, the sheriff will ask you to come along and kill Decker
+        (and will in fact do nothing until you agree to do this). This battle is
+        tough, not least because of Kane who has four attacks per round and hits
+        hard. I'd recommend you have at least 50 HP and Combat Armor from Jacob
+        before attempting this, or take 2 Psycho. You can't leave the hideout
+        until Decker and Kane are both dead, but as soon as they are the others
+        will surrender. You get $300 from the sheriff when you agree to go,
+        $1000 and 1400 xp when it's all taken care of. Remember to go and loot
+        Decker's place afterwards, and you can of course kill any remaining
+        scum.
+      </p>
+
       <blockquote class="green_star">
         If the sheriff didn't make it Kenny will give you the reward instead. In
         fact you can kill Greene and Fry in the fight and the police won't know
@@ -2707,31 +2813,36 @@
         Kill Deputy Kenny and watch the message window.
       </blockquote>
 
-      In Old Town, Jacob sells stuff like Combat Armor and Sniper Rifles. He'll
-      have a Super Sledge if you talk to him a second time (it's actually the
-      weapon he's wielding to begin with). If you ask for something with "more
-      punch", he'll put the Brotherhood and the Boneyard on your world map.
-      Vance to the east sells chems (you may want some Rad-X before going to the
-      Glow later, if you don't find it elsewhere), but he doesn't deal with just
-      anyone who comes in the door. You can get a recommendation from Jacob if
-      you ask him about RadAway, or from Lemmy by paying lots of money. With
-      good Speech or CH you don't need one. Other ways to get at Vance's goods
-      is to hit the barter button when he initiates dialogue the first time, or
-      to kill him before he has a chance to do so (his stuff will then be in his
-      corpse).
+      <p>
+        In Old Town, Jacob sells stuff like Combat Armor and Sniper Rifles.
+        He'll have a Super Sledge if you talk to him a second time (it's
+        actually the weapon he's wielding to begin with). If you ask for
+        something with "more punch", he'll put the Brotherhood and the Boneyard
+        on your world map. Vance to the east sells chems (you may want some
+        Rad-X before going to the Glow later, if you don't find it elsewhere),
+        but he doesn't deal with just anyone who comes in the door. You can get
+        a recommendation from Jacob if you ask him about RadAway, or from Lemmy
+        by paying lots of money. With good Speech or CH you don't need one.
+        Other ways to get at Vance's goods is to hit the barter button when he
+        initiates dialogue the first time, or to kill him before he has a chance
+        to do so (his stuff will then be in his corpse).
+      </p>
+
       <blockquote class="green_star">
         In a crate to the right of where Jacob is standing you'll find a heap of
         Junk. This is actually a quest item which is used in two parts of the
         game, so if you grab this it might save you some running around later.
       </blockquote>
 
-      Just south of the exit grid there's a gang of four toughs guarding a
-      prisoner, and they'll attack you on sight (you should be safe out in the
-      street... most of the time). If you find this fight too hard, you could
-      try to enlist the aid of the Hub police by hiding behind them and hoping
-      the thugs will hit them accidentally. The prisoner will put the
-      Brotherhood on your world map if you didn't already have it. You have to
-      talk to him to free him.
+      <p>
+        Just south of the exit grid there's a gang of four toughs guarding a
+        prisoner, and they'll attack you on sight (you should be safe out in the
+        street... most of the time). If you find this fight too hard, you could
+        try to enlist the aid of the Hub police by hiding behind them and hoping
+        the thugs will hit them accidentally. The prisoner will put the
+        Brotherhood on your world map if you didn't already have it. You have to
+        talk to him to free him.
+      </p>
 
       <p>
         In the southern Hub area you find the Water Merchants. Their boss will
@@ -2767,14 +2878,17 @@
         opened and closed. Scary.
       </blockquote>
 
-      Thorndyke, the guy who looks like a doctor in the building to the
-      northwest, will heal 15-25 HP for free every 24 hours if you let him, and
-      talk about Unity and war. The guard beside him doesn't have much to say
-      (you can only talk to him once, too). By the door there's a boy trying to
-      give you a Flower. You can keep asking him questions until he walks away.
-      If you try to enter the room with the bookcase, the guard will stop you.
-      You can do it by sneaking. Jain is the robed woman; talking to her does
-      little.
+      <p>
+        Thorndyke, the guy who looks like a doctor in the building to the
+        northwest, will heal 15-25 HP for free every 24 hours if you let him,
+        and talk about Unity and war. The guard beside him doesn't have much to
+        say (you can only talk to him once, too). By the door there's a boy
+        trying to give you a Flower. You can keep asking him questions until he
+        walks away. If you try to enter the room with the bookcase, the guard
+        will stop you. You can do it by sneaking. Jain is the robed woman;
+        talking to her does little.
+      </p>
+
       <blockquote class="green_star">
         IN&lt;4: If you talk to Jain she'll attack.
       </blockquote>
@@ -2786,6 +2900,7 @@
           Talk to Kane after finishing quest 2 to see Decker again. You get
           $1000 up front if you talk to Kane and $4000 and 700 xp more when you
           return after killing Jain in the hospital.
+
           <blockquote>
             <img
               height="12"
@@ -2797,7 +2912,6 @@
             Kane, but you must have finished the Hightower job successfully
             first.
           </blockquote>
-
         </li>
         <li>
           <strong>Dispose of merchant.</strong><br />
@@ -2813,6 +2927,7 @@
           accept the job you'll get $500 when you talk to Kane again upstairs.
           Go to the Heights and kill Hightower and his wife. You get $2500 and
           600 xp when you return to Kane.
+
           <blockquote>
             <img
               height="12"
@@ -2855,7 +2970,6 @@
             Phil know he can move back into his house in Junktown. This does not
             stop the Hightowers from leaving as described above.
           </blockquote>
-
         </li>
         <li>
           <strong>Find the missing caravans.</strong><br />
@@ -2875,6 +2989,7 @@
           holodisk, and you'll get $800 and 1000 xp. If you need to go back to
           the cave, Slappy will take you there if you didn't already kill the
           deathclaw.
+
           <blockquote>
             <img
               height="12"
@@ -2885,7 +3000,6 @@
             In the unpatched version you reportedly got 800 xp every time you
             asked Slappy to take you to the cave.
           </blockquote>
-
         </li>
         <li>
           <strong>Steal necklace from the Merchants.</strong><br />
@@ -2903,6 +3017,7 @@
           After you have the Necklace, return to the Circle and collect a reward
           of 500 xp, $3000 and an Electronic Lock Pick. This concludes your
           dealings with the Thieves' Circle.
+
           <blockquote>
             <img
               height="12"
@@ -2939,22 +3054,25 @@
             If you don't pick up Jasmine's first batch o' stuff before
             delivering the Necklace you miss out on it.
           </blockquote>
-
         </li>
       </ol>
       <hr />
 
       <h3 id="necro">Necropolis</h3>
+
       <blockquote class="opening-quote">
         "I am the bringer of death. Fall to your knees and beg for mercy... Or
         give me a sandwich, I'm pretty hungry."<br />
         --The Vault Dweller
       </blockquote>
 
-      You start out on a map with a derelict hotel. You can talk to a couple of
-      ghouls, but it leads nowhere. The groaning ones will attack if you go too
-      near; let them, and kill them. Once you're done, go down one of the three
-      manholes.
+      <p>
+        You start out on a map with a derelict hotel. You can talk to a couple
+        of ghouls, but it leads nowhere. The groaning ones will attack if you go
+        too near; let them, and kill them. Once you're done, go down one of the
+        three manholes.
+      </p>
+
       <blockquote class="green_star">
         Ghouls on all three Necropolis maps will react if you try to loot their
         containers. This isn't so much of a problem on the first and third map
@@ -2964,25 +3082,31 @@
         odd point.
       </blockquote>
 
-      There are four rats below, and a Cattle Prod on one of the corpses to the
-      southeast. Go north to the exit grid. Talk to the ghoul and get quest 2.
-      If you go north and east you find more rats, and a Plasma Pistol on a
-      corpse. Take either of the two ladders up. If you take the northern one
-      you'll find yourself in a passage connecting two trapped hidden doors. If
-      you set off the nearest trap a ghoul guard outside might get hurt, but he
-      won't turn hostile.
+      <p>
+        There are four rats below, and a Cattle Prod on one of the corpses to
+        the southeast. Go north to the exit grid. Talk to the ghoul and get
+        quest 2. If you go north and east you find more rats, and a Plasma
+        Pistol on a corpse. Take either of the two ladders up. If you take the
+        northern one you'll find yourself in a passage connecting two trapped
+        hidden doors. If you set off the nearest trap a ghoul guard outside
+        might get hurt, but he won't turn hostile.
+      </p>
+
       <blockquote class="green_star">
         You can use Traps or Lockpick repeatedly on either of the secret doors
         for 50 xp each time.
       </blockquote>
 
-      Find Set residing in his Hall of the Dead and talk to him to get quest 1.
-      If you took the Water Chip but didn't repair the pump yet, he'll demand
-      the chip (which will then return to the vault) or else you'll have to
-      fight. Another option in this situation if you're carrying Junk is to
-      offer to repair the pump; you'll then be teleported to the water shed
-      along with Garret who won't like it if you try to leave without fixing the
-      pump.
+      <p>
+        Find Set residing in his Hall of the Dead and talk to him to get quest
+        1. If you took the Water Chip but didn't repair the pump yet, he'll
+        demand the chip (which will then return to the vault) or else you'll
+        have to fight. Another option in this situation if you're carrying Junk
+        is to offer to repair the pump; you'll then be teleported to the water
+        shed along with Garret who won't like it if you try to leave without
+        fixing the pump.
+      </p>
+
       <blockquote class="green_star">
         If you talk to Set after killing the Master, he will be so happy he'll
         give you 40 Small Energy Cell, 50 Micro Fusion Cell, 1 Buffout, 1
@@ -2993,8 +3117,10 @@
         the base on the map and you miss the stuff.
       </blockquote>
 
-      Optionally take out the ghoul gangers to the southeast of the church. Go
-      into the sewers again and go north.
+      <p>
+        Optionally take out the ghoul gangers to the southeast of the church. Go
+        into the sewers again and go north.
+      </p>
 
       <p>
         Find the ladder and go up. There are two more manholes on this map that
@@ -3038,17 +3164,20 @@
         major problem.
       </blockquote>
 
-      You get 500 xp if you unlock the door to the cell with the ghoul in the
-      same building as the mutants. Go down the manhole in the room next door,
-      and down again. You'll have to fight two glowing ghouls. Enter the vault
-      and take the elevator down. On level 2 there's nothing to do except fight
-      some ghouls and take 2 Rad-X from a locker. On level 3 you can take the
-      Water Chip by using the functional computer (if you're having problems,
-      use Science first to get a bonus to your Repair check). You get 2500 xp
-      for this minus 250 xp for each of the six super mutant guards you already
-      killed. If you should have second thoughts, you can reinstall the chip by
-      using it on the computer. Once you have the chip, the ghouls will sound
-      threatening and attack if you didn't already fix the pump.
+      <p>
+        You get 500 xp if you unlock the door to the cell with the ghoul in the
+        same building as the mutants. Go down the manhole in the room next door,
+        and down again. You'll have to fight two glowing ghouls. Enter the vault
+        and take the elevator down. On level 2 there's nothing to do except
+        fight some ghouls and take 2 Rad-X from a locker. On level 3 you can
+        take the Water Chip by using the functional computer (if you're having
+        problems, use Science first to get a bonus to your Repair check). You
+        get 2500 xp for this minus 250 xp for each of the six super mutant
+        guards you already killed. If you should have second thoughts, you can
+        reinstall the chip by using it on the computer. Once you have the chip,
+        the ghouls will sound threatening and attack if you didn't already fix
+        the pump.
+      </p>
 
       <p>
         If you remove the Water Chip without fixing the pump, the ghouls in
@@ -3106,16 +3235,19 @@
       <hr />
 
       <h3 id="glow">The Glow</h3>
+
       <blockquote class="opening-quote">
         "Wow. I wish I had a hot dog and a really long stick."<br />
         --Katja
       </blockquote>
 
-      You'll probably be going here as a result of getting (or anticipating)
-      Brotherhood quest 1. First of all, bring a Rope. Approaching the Glow in a
-      curved path from the northeast is recommended if you're still on a time
-      limit, because then you'll be travelling on plains during most of the
-      journey.
+      <p>
+        You'll probably be going here as a result of getting (or anticipating)
+        Brotherhood quest 1. First of all, bring a Rope. Approaching the Glow in
+        a curved path from the northeast is recommended if you're still on a
+        time limit, because then you'll be travelling on plains during most of
+        the journey.
+      </p>
 
       <p>
         The deal with the Glow is that you'll be exposed to radiation only on
@@ -3151,15 +3283,21 @@
         use any. This can be ignored.
       </blockquote>
 
-      On level 2, shoot or smash the inert robots and get the Red Pass Key from
-      a corpse to the northeast, then return to the elevator and go to level 3.
+      <p>
+        On level 2, shoot or smash the inert robots and get the Red Pass Key
+        from a corpse to the northeast, then return to the elevator and go to
+        level 3.
+      </p>
+
       <blockquote class="green_star">
         If you turn power off on level 2 or 3, you'll be able to go up using the
         elevator, but not back down again until you turn power back on.
       </blockquote>
 
-      On level 3, shoot the robots, loot stuff and use the Red Pass Key on the
-      other elevator. Proceed to level 4 or 6.
+      <p>
+        On level 3, shoot the robots, loot stuff and use the Red Pass Key on the
+        other elevator. Proceed to level 4 or 6.
+      </p>
 
       <p>
         On level 4, shoot the robots, loot the place and take the Blue Pass Key
@@ -3199,8 +3337,10 @@
         part of a <em>The X Files</em> reference.
       </blockquote>
 
-      On level 6, shoot the robots, fix the generator (see quest 2) and loot
-      stuff.
+      <p>
+        On level 6, shoot the robots, fix the generator (see quest 2) and loot
+        stuff.
+      </p>
 
       <p>
         To get to level 5 (from level 4 or 6) you must first activate primary
@@ -3232,32 +3372,39 @@
       <hr />
 
       <h3 id="broth">Brotherhood</h3>
+
       <blockquote class="opening-quote">
         "Do I have to sacrifice a puppie to join?"<br />
         --The Vault Dweller
       </blockquote>
 
-      Arriving here you can talk to Cabbot and get quest 1, which is one way of
-      getting inside. However, with a good Lockpick skill and an Electronic Lock
-      Pick you can open the door and go in, and everyone will treat you like an
-      initiate. You can pick the door without the Electronic Lock Pick, but then
-      the guards will turn hostile.
+      <p>
+        Arriving here you can talk to Cabbot and get quest 1, which is one way
+        of getting inside. However, with a good Lockpick skill and an Electronic
+        Lock Pick you can open the door and go in, and everyone will treat you
+        like an initiate. You can pick the door without the Electronic Lock
+        Pick, but then the guards will turn hostile.
+      </p>
+
       <blockquote class="green_star">
         IN&lt;4: Talking to Darrel nets you a dose of Rad-X.
       </blockquote>
 
-      Inside you can talk to one of the guards by the entrance (and hit on her,
-      though it won't lead anywhere). Go to the gym for some martial arts
-      training, which will begin as soon as you enter the room. If you stay and
-      watch you'll gain +5% Unarmed and +5% Melee Weapons in increments of one
-      during the course of the session, and 500 xp if you got all five. Talk to
-      Talus about equipment and you'll be able to check out Brotherhood Armor
-      and three clips of a non-energy ammo type of your choice (he'll never give
-      you any more ammo after that no matter how long you wait). Rhombus isn't
-      much of a conversationalist and will kick you out of the bunker or attack
-      you if you anger him. He can put the Hub and the Boneyard on your world
-      map. Should you get kicked out, you can pick the door to get back in and
-      no one will seem to remember that you were expelled (including Rhombus).
+      <p>
+        Inside you can talk to one of the guards by the entrance (and hit on
+        her, though it won't lead anywhere). Go to the gym for some martial arts
+        training, which will begin as soon as you enter the room. If you stay
+        and watch you'll gain +5% Unarmed and +5% Melee Weapons in increments of
+        one during the course of the session, and 500 xp if you got all five.
+        Talk to Talus about equipment and you'll be able to check out
+        Brotherhood Armor and three clips of a non-energy ammo type of your
+        choice (he'll never give you any more ammo after that no matter how long
+        you wait). Rhombus isn't much of a conversationalist and will kick you
+        out of the bunker or attack you if you anger him. He can put the Hub and
+        the Boneyard on your world map. Should you get kicked out, you can pick
+        the door to get back in and no one will seem to remember that you were
+        expelled (including Rhombus).
+      </p>
 
       <p>
         If you want to raid the large storeroom, which means you'll be at odds
@@ -3285,6 +3432,7 @@
         <li>IN: $6000, 3 weeks</li>
         <li>AG: $5000, 3 weeks</li>
       </ul>
+
       <blockquote class="green_star">
         You gain skill points based on your Intelligence when you first enter
         the character screen after levelling up. Thus if you don't view your
@@ -3314,11 +3462,14 @@
         matter much, either.
       </blockquote>
 
-      On level 3 you can talk to Kyle about power armour and agree to get a
-      systolic motivator. You can get one from Michael if you bluff him and
-      don't mention Kyle. Another one is kept in the locker in Rhombus'
-      quarters. To get it, rest until Rhombus goes into the back room, then take
-      one of these approaches:
+      <p>
+        On level 3 you can talk to Kyle about power armour and agree to get a
+        systolic motivator. You can get one from Michael if you bluff him and
+        don't mention Kyle. Another one is kept in the locker in Rhombus'
+        quarters. To get it, rest until Rhombus goes into the back room, then
+        take one of these approaches:
+      </p>
+
       <ul>
         <li>
           If you have an NPC, let them open the door by wandering so you can go
@@ -3359,19 +3510,24 @@
       use Repair or a Tool on the suit on the table. With a successful Repair
       check you get 500 xp and a set of Powered Armor. If you fail the check you
       need Repair 75% to try again.
+
       <blockquote class="green_star">
         IN&lt;4: If you're stupid and get caught by Rhombus, you'll enter a loop
         where Rhombus initiates dialogue and says the same thing over and over.
         To get out of this, hold down the A key and move away.
       </blockquote>
 
-      Also on level 3 you can talk to Sophia for a Brotherhood History disk if
-      you want, and talk to Vree and ask about the mutants for a Vree's
-      Experiment Disk, which could be very useful later on (you can also steal
-      one from her). If you ask her about radiation she'll give you a dose of
-      Rad-X, and if you ask about holodisks and computer skills she'll give you
-      access to a computer which will raise your Science skill by 15%. Better
-      raise it to 91% using books before that, but it matters little really.
+      <p>
+        Also on level 3 you can talk to Sophia for a Brotherhood History disk if
+        you want, and talk to Vree and ask about the mutants for a Vree's
+        Experiment Disk, which could be very useful later on (you can also steal
+        one from her). If you ask her about radiation she'll give you a dose of
+        Rad-X, and if you ask about holodisks and computer skills she'll give
+        you access to a computer which will raise your Science skill by 15%.
+        Better raise it to 91% using books before that, but it matters little
+        really.
+      </p>
+
       <blockquote class="green_star">
         Vree won't talk to you if you get a bad reaction. Evil characters may be
         able to soften her up with Cult of Personality, which is about how
@@ -3381,9 +3537,12 @@
         terminal, or you won't be able to use it.
       </blockquote>
 
-      On level 4 you can talk to Maxson and offer to scout the north for signs
-      of the mutant threat. If you ask for weaponry then Mathia (a person of
-      indeterminate gender) will let you choose between the following:
+      <p>
+        On level 4 you can talk to Maxson and offer to scout the north for signs
+        of the mutant threat. If you ask for weaponry then Mathia (a person of
+        indeterminate gender) will let you choose between the following:
+      </p>
+
       <ul>
         <li>1 Sniper Rifle</li>
         <li>1 Rocket Launcher</li>
@@ -3403,6 +3562,7 @@
       Brotherhood should attack the base, go talk to the Elders and you get 1500
       xp again plus three Brotherhood paladins for when you return to the
       Military Base.
+
       <blockquote class="green_star">
         The dialogue path where you first hesitate to take the scouting mission
         and then ask for $1000 is bugged, so that first of all you get the money
@@ -3450,6 +3610,7 @@
           the highest trade value (you'll be able to buy lots of books from Mrs
           Stapleton if you didn't already). Talk to Michael nearby to collect
           your reward.
+
           <blockquote>
             <img
               height="12"
@@ -3474,29 +3635,32 @@
             IN&lt;4: Although Talus will know if you rescued the prisoner, you
             can't get the reward <em>or</em> the xp unless you get smart.
           </blockquote>
-
         </li>
       </ol>
       <hr />
 
       <h3 id="bone">Boneyard</h3>
+
       <blockquote class="opening-quote">
         "What do you want?"<br />
         "A donut."<br />
         --Avellone and the Vault Dweller
       </blockquote>
 
-      When you first come here you'll be accosted by the Adytum guards. If you
-      go down the manhole in the shack by the entrance you'll find Tine the
-      merchant, but he doesn't have anything of notice. Different inventory on
-      the two tables. Talking to Sammael or Lorraine yields some info. Talk to
-      Chuck in his tent and let him give you tarot readings. He'll give you from
-      one to three readings for locations: the Brotherhood (if you have never
-      had anyone mark it on your map), the Military Base (if you have not been
-      there or found its location in the Cathedral vault), and finally the
-      Cathedral (always). Next time after that he'll draw the Fool and your Luck
-      will go up permanently by 1. Don't mock him after a reading or he won't
-      tell your fortune again.
+      <p>
+        When you first come here you'll be accosted by the Adytum guards. If you
+        go down the manhole in the shack by the entrance you'll find Tine the
+        merchant, but he doesn't have anything of notice. Different inventory on
+        the two tables. Talking to Sammael or Lorraine yields some info. Talk to
+        Chuck in his tent and let him give you tarot readings. He'll give you
+        from one to three readings for locations: the Brotherhood (if you have
+        never had anyone mark it on your map), the Military Base (if you have
+        not been there or found its location in the Cathedral vault), and
+        finally the Cathedral (always). Next time after that he'll draw the Fool
+        and your Luck will go up permanently by 1. Don't mock him after a
+        reading or he won't tell your fortune again.
+      </p>
+
       <blockquote class="green_star">
         You can take out Tine and grab all his stuff without alerting anyone.
         His stuff will be slightly cheaper if you use the tables instead of
@@ -3519,13 +3683,15 @@
         map. These are the Blades which appear during and after the battle.
       </blockquote>
 
-      After you deliver the hydroponic parts (quest 2) you can get some upgrades
-      here. Take a Plasma Rifle to Smitty and he'll turn it into a Turbo Plasma
-      Rifle, one of the best weapons in the game. Remember to unload the rifle
-      first and you'll get some free ammo. Talk to Smitty with a suit of Powered
-      Armor and he'll ask for some Chemistry Journals from the Hub. Stapleton
-      will charge $750 for them. Return to Miles and he'll turn your armour into
-      Hardened Power Armor.
+      <p>
+        After you deliver the hydroponic parts (quest 2) you can get some
+        upgrades here. Take a Plasma Rifle to Smitty and he'll turn it into a
+        Turbo Plasma Rifle, one of the best weapons in the game. Remember to
+        unload the rifle first and you'll get some free ammo. Talk to Smitty
+        with a suit of Powered Armor and he'll ask for some Chemistry Journals
+        from the Hub. Stapleton will charge $750 for them. Return to Miles and
+        he'll turn your armour into Hardened Power Armor.
+      </p>
 
       <p>
         Mayor Zimmerman will ask you to go north and kill Razor of the Blades.
@@ -3547,11 +3713,14 @@
         accept the quest and you'll be able to confront Razor normally.
       </blockquote>
 
-      If you take out the Regulators all by yourself and return to Razor you get
-      500 xp. If you go and play back the Regulator Transmission holodisk to
-      Zimmerman, the Regulator standing next to him will blow him away,
-      triggering a fight between the Regulators and your team. You can then run
-      back to Razor and she'll ask you again to get the Blades some weapons.
+      <p>
+        If you take out the Regulators all by yourself and return to Razor you
+        get 500 xp. If you go and play back the Regulator Transmission holodisk
+        to Zimmerman, the Regulator standing next to him will blow him away,
+        triggering a fight between the Regulators and your team. You can then
+        run back to Razor and she'll ask you again to get the Blades some
+        weapons.
+      </p>
 
       <p>
         Go east to the abandoned warehouse area. There'll be two or three
@@ -3586,17 +3755,21 @@
         able to talk to Zack and Gabriel as if you were of normal intelligence.
       </blockquote>
 
-      Talk to Gabriel and he'll give you the task of exterminating the
-      deathclaws. Once you have, you get 1000 xp and a reward. If you talked to
-      Razor you can ask for weapons for the Blades, otherwise you can only ask
-      for weapons for yourself, whereupon the guards blocking the lockers will
-      move so you can loot them (booty includes 2 Plasma Rifles). Zack will give
-      you a discount of about 15% when you've agreed to kill the deathclaws, and
-      a discount of about 20% when you're done. If you want to convert items
-      into cash, then Zack's your man since he will have $3000-4000 every time
-      you talk to him. Even with a dismal CH and Barter your stuff should be
-      worth more than his once you get the best discount, so you can basically
-      help yourself to any ammo or weapon of his that you need.
+      <p>
+        Talk to Gabriel and he'll give you the task of exterminating the
+        deathclaws. Once you have, you get 1000 xp and a reward. If you talked
+        to Razor you can ask for weapons for the Blades, otherwise you can only
+        ask for weapons for yourself, whereupon the guards blocking the lockers
+        will move so you can loot them (booty includes 2 Plasma Rifles). Zack
+        will give you a discount of about 15% when you've agreed to kill the
+        deathclaws, and a discount of about 20% when you're done. If you want to
+        convert items into cash, then Zack's your man since he will have
+        $3000-4000 every time you talk to him. Even with a dismal CH and Barter
+        your stuff should be worth more than his once you get the best discount,
+        so you can basically help yourself to any ammo or weapon of his that you
+        need.
+      </p>
+
       <blockquote class="green_star">
         If you asked for weapons for yourself, you can leave the map and return
         (the wandering guards will stop wandering), then talk to Gabriel again.
@@ -3612,19 +3785,23 @@
         talk to him again you should get the full 20%.
       </blockquote>
 
-      Return to Razor after the Blades have their weapons. You can decline to
-      help free Adytum, in which case the Regulators will disappear and you get
-      2000 xp if you enter the Adytown map. You can offer to help, in which case
-      you're teleported to Adytum and a fight breaks out between the Regulators
-      and everyone else. Note that important people like Miles and Smitty can
-      die in this fight, so do everything else first. Once the battle is over
-      you get 2000 xp. Thirdly you can tell Razor you want to talk to Zimmerman
-      before the attack. If you show him the holodisk he'll be killed as before,
-      the eight armed Blades will appear, and you fight as normal and get the
-      2000 xp afterwards. Once the Regulators are defeated you can go to MacRae
-      of the Blades and ask for training, but this doesn't seem to do anything.
-      Also talk to Michael in the Blades building and he'll hand you 4 Stimpaks
-      and a random amount of money, $10-100.
+      <p>
+        Return to Razor after the Blades have their weapons. You can decline to
+        help free Adytum, in which case the Regulators will disappear and you
+        get 2000 xp if you enter the Adytown map. You can offer to help, in
+        which case you're teleported to Adytum and a fight breaks out between
+        the Regulators and everyone else. Note that important people like Miles
+        and Smitty can die in this fight, so do everything else first. Once the
+        battle is over you get 2000 xp. Thirdly you can tell Razor you want to
+        talk to Zimmerman before the attack. If you show him the holodisk he'll
+        be killed as before, the eight armed Blades will appear, and you fight
+        as normal and get the 2000 xp afterwards. Once the Regulators are
+        defeated you can go to MacRae of the Blades and ask for training, but
+        this doesn't seem to do anything. Also talk to Michael in the Blades
+        building and he'll hand you 4 Stimpaks and a random amount of money,
+        $10-100.
+      </p>
+
       <blockquote class="green_star">
         You can effectively pause the war by leaving the Adytum map. If you
         return and are spotted by a Regulator it'll start again, with everyone's
@@ -3679,10 +3856,12 @@
         not one of them bothered to actually check this.
       </blockquote>
 
-      On the Followers map there's a house with bounty hunters to the northwest.
-      They'll attack on sight only if you're a Childkiller, or you can provoke
-      them into attacking if you choose the "donut" answer twice. Hey,
-      "Christopher Avellone" sounds eerily familiar.
+      <p>
+        On the Followers map there's a house with bounty hunters to the
+        northwest. They'll attack on sight only if you're a Childkiller, or you
+        can provoke them into attacking if you choose the "donut" answer twice.
+        Hey, "Christopher Avellone" sounds eerily familiar.
+      </p>
 
       <p>
         If you talk to Nicole and ask for help with the Children of the
@@ -3735,18 +3914,22 @@
       <hr />
 
       <h3 id="base">Military Base</h3>
+
       <blockquote class="opening-quote">
         "There is a bad place where the bad mutants come from. It is bad. Vault
         is good. Please, go destroy bad place."<br />
         --The Overseer
       </blockquote>
 
-      There are four mutant guards around outside the base. If you want to lure
-      three of them away, you can use a Radio, which brings up a dialogue. Say
-      you're being attacked or fell down or something, and you get 1500 xp for
-      tricking the mutants. If they ask for your coordinates, reply with "Four
-      miles, south-southwest". You can attack the three as they're walking off
-      after you got the xp, if you want.
+      <p>
+        There are four mutant guards around outside the base. If you want to
+        lure three of them away, you can use a Radio, which brings up a
+        dialogue. Say you're being attacked or fell down or something, and you
+        get 1500 xp for tricking the mutants. If they ask for your coordinates,
+        reply with "Four miles, south-southwest". You can attack the three as
+        they're walking off after you got the xp, if you want.
+      </p>
+
       <blockquote class="green_star">
         If you convinced the Brotherhood to attack the base, there will be three
         "crack assault paladins" around. They're pretty useless - with decent
@@ -3755,13 +3938,17 @@
         this map and return, they'll be here.
       </blockquote>
 
-      To get in, you can pick the door (easier with an Electronic Lock Pick, but
-      can be done without it), or examine the Tape carried by the door guard
-      which will provide you with an entry code. Another way to get in is to
-      talk to the mutants (put away your weapon) and agree to meet their boss,
-      which will teleport you to the Lieutenant. If they address you but you
-      don't want to go with them you can bluff them, which is easier if you're
-      wearing Robes. Bringing NPCs is just fine, all the way down to level 4.
+      <p>
+        To get in, you can pick the door (easier with an Electronic Lock Pick,
+        but can be done without it), or examine the Tape carried by the door
+        guard which will provide you with an entry code. Another way to get in
+        is to talk to the mutants (put away your weapon) and agree to meet their
+        boss, which will teleport you to the Lieutenant. If they address you but
+        you don't want to go with them you can bluff them, which is easier if
+        you're wearing Robes. Bringing NPCs is just fine, all the way down to
+        level 4.
+      </p>
+
       <blockquote class="green_star">
         Katja can pick the door for you after you've tried to open it.
       </blockquote>
@@ -3773,12 +3960,14 @@
         away in combat mode.
       </blockquote>
 
-      If any fight outside or inside the base goes on for more than 2 rounds it
-      will trigger the alarm, which you can tell by the flashing red lights.
-      This will change the positions of super mutants on levels 1-3 slightly and
-      make them attack you on sight, and also activate the yellow forcefields.
-      Some replies you can give to mutant guards will instantly put the base on
-      alert as well.
+      <p>
+        If any fight outside or inside the base goes on for more than 2 rounds
+        it will trigger the alarm, which you can tell by the flashing red
+        lights. This will change the positions of super mutants on levels 1-3
+        slightly and make them attack you on sight, and also activate the yellow
+        forcefields. Some replies you can give to mutant guards will instantly
+        put the base on alert as well.
+      </p>
 
       <p>
         In the room to the right, use Science on the computer that isn't a "Mach
@@ -3866,12 +4055,14 @@
         triggering the self-destruct, does not have this effect.
       </blockquote>
 
-      On the right side of this map you finally meet the Lieutenant. If you move
-      just one hex around the corner, he and VanHagan/VanHaggen will start a
-      conversation. Stand still until they're done and you gain 1000 xp. If you
-      weren't ever "captured" by a mutant, the Lieutenant will attack you on
-      sight. In this case, just waste everyone and everything and take their
-      stuff.
+      <p>
+        On the right side of this map you finally meet the Lieutenant. If you
+        move just one hex around the corner, he and VanHagan/VanHaggen will
+        start a conversation. Stand still until they're done and you gain 1000
+        xp. If you weren't ever "captured" by a mutant, the Lieutenant will
+        attack you on sight. In this case, just waste everyone and everything
+        and take their stuff.
+      </p>
 
       <p>
         If you were taken here, however, you'll have a little chat and he'll ask
@@ -3909,6 +4100,7 @@
       <hr />
 
       <h3 id="cathe">Cathedral</h3>
+
       <blockquote class="opening-quote">
         "What do you want?"<br />
         "To see a valley filled with my enemies' heads mounted on spears. A
@@ -3916,12 +4108,16 @@
         --Thug and the Vault Dweller
       </blockquote>
 
-      There's a lot of people outside the Cathedral but none of them can give
-      you anything but general info. Well, Calder gives you a Flower, and the
-      thug and the zombie offer lots of great conversation options to Berserkers
-      (wear Robes to talk to the thug). Inside in one of the rooms to the left
-      you find Laura. If you talked to Nicole and got the secret codeword you
-      can talk to her about stuff and she'll open the first locked door for you.
+      <p>
+        There's a lot of people outside the Cathedral but none of them can give
+        you anything but general info. Well, Calder gives you a Flower, and the
+        thug and the zombie offer lots of great conversation options to
+        Berserkers (wear Robes to talk to the thug). Inside in one of the rooms
+        to the left you find Laura. If you talked to Nicole and got the secret
+        codeword you can talk to her about stuff and she'll open the first
+        locked door for you.
+      </p>
+
       <blockquote class="green_star">
         If you asked Nicole for help there'll also be four warriors from the
         Followers milling about. Unlike the Brotherhood paladins at the Military
@@ -3942,17 +4138,19 @@
         after you end combat and their corpses will vanish.
       </blockquote>
 
-      There's a kind of shop on the right. The stuff is slightly cheaper if you
-      click barter instead of going through the dialogue, as if that matters at
-      this point. To get the inventory after killing the storekeep, use Steal on
-      the table. Dr Wu will give you invectives instead of healing. If you talk
-      to Lasher he can give you a red COC Badge if you say you want to see the
-      man in charge and ask for a way to pass the Nightkin, or tell him "Thank
-      you, sir"; if you say you have questions and then that you must see
-      Morpheus, he says he's giving you a badge but you don't get one (bug).
-      Lasher will attack if you're holding a weapon, or if you're a Berserker or
-      Childkiller. Ton and Sister Francis are useless, but you can barter a red
-      COC Badge off them for about $7.
+      <p>
+        There's a kind of shop on the right. The stuff is slightly cheaper if
+        you click barter instead of going through the dialogue, as if that
+        matters at this point. To get the inventory after killing the storekeep,
+        use Steal on the table. Dr Wu will give you invectives instead of
+        healing. If you talk to Lasher he can give you a red COC Badge if you
+        say you want to see the man in charge and ask for a way to pass the
+        Nightkin, or tell him "Thank you, sir"; if you say you have questions
+        and then that you must see Morpheus, he says he's giving you a badge but
+        you don't get one (bug). Lasher will attack if you're holding a weapon,
+        or if you're a Berserker or Childkiller. Ton and Sister Francis are
+        useless, but you can barter a red COC Badge off them for about $7.
+      </p>
 
       <p>
         The door to the stairwell can be opened with good Lockpick, or with a
@@ -3970,14 +4168,18 @@
         DeNardo's dog Sasha doing a cameo. There's no way to get there.
       </blockquote>
 
-      On the first floor you'll encounter Dane and a couple of ethereal-looking
-      Nightkin. You can talk to Dane until he calms down and then you'll get
-      some less-than-completely-calm info from him. If any of the Nightkin sees
-      you, they'll attack if you have any company (NPCs or the Followers); if
-      you're alone, you must be wearing Robes or carrying a COC Badge to be
-      safe. Fighting on one floor will not turn people elsewhere in the
-      Cathedral hostile. This also means that if you leave combat by moving to
-      another floor, critters will not necessarily attack when you return.
+      <p>
+        On the first floor you'll encounter Dane and a couple of
+        ethereal-looking Nightkin. You can talk to Dane until he calms down and
+        then you'll get some less-than-completely-calm info from him. If any of
+        the Nightkin sees you, they'll attack if you have any company (NPCs or
+        the Followers); if you're alone, you must be wearing Robes or carrying a
+        COC Badge to be safe. Fighting on one floor will not turn people
+        elsewhere in the Cathedral hostile. This also means that if you leave
+        combat by moving to another floor, critters will not necessarily attack
+        when you return.
+      </p>
+
       <blockquote class="green_star">
         The Nightkin's "stealth" effect appears to be purely cosmetic. It
         doesn't affect your chance to hit them or to hit anything behind them,
@@ -3992,13 +4194,16 @@
         the others. It actually does make more sense that way.
       </blockquote>
 
-      On the second floor you find some sentries and stuff. On the third floor
-      there's Morpheus. If you talk to him you can reveal your identity as the
-      Vault Dweller and he'll take you to the Master, which could be useful in a
-      pacifist game. Otherwise, kill him and you'll gain a black COC Badge and
-      1000 xp as well. Here you'll find the one-of-a-kind Tesla Armor. It could
-      theoretically be used in combat with enemies with energy weapons, but I'd
-      just leave it.
+      <p>
+        On the second floor you find some sentries and stuff. On the third floor
+        there's Morpheus. If you talk to him you can reveal your identity as the
+        Vault Dweller and he'll take you to the Master, which could be useful in
+        a pacifist game. Otherwise, kill him and you'll gain a black COC Badge
+        and 1000 xp as well. Here you'll find the one-of-a-kind Tesla Armor. It
+        could theoretically be used in combat with enemies with energy weapons,
+        but I'd just leave it.
+      </p>
+
       <blockquote class="green_star">
         Going with Morpheus triggers a potential bug: if you fight your way out
         (optionally killing Morpheus before he can disappear), leave to the
@@ -4010,16 +4215,18 @@
         the top of the tower and the "real" Morpheus will be there.
       </blockquote>
 
-      In the basement there's a secret door to the far right. Using Lockpick or
-      Traps successfully on the bookcase next to it reveals a secret lever; use
-      the bookcase and the door will open. Else you could wait for a while and
-      Jeremiah shows up. If you're alone and wearing Robes he will ignore you
-      (you can chat with him if you like); if you're not, you can either fight
-      him or let him kick you out of the cathedral. If you have NPCs or Follower
-      invaders, you can stand near the secret door and they'll step through it
-      eventually, opening it. Lastly, if all else fails, you can open the secret
-      door with explosives. If you're on the inside you can open it manually
-      like any other door.
+      <p>
+        In the basement there's a secret door to the far right. Using Lockpick
+        or Traps successfully on the bookcase next to it reveals a secret lever;
+        use the bookcase and the door will open. Else you could wait for a while
+        and Jeremiah shows up. If you're alone and wearing Robes he will ignore
+        you (you can chat with him if you like); if you're not, you can either
+        fight him or let him kick you out of the cathedral. If you have NPCs or
+        Follower invaders, you can stand near the secret door and they'll step
+        through it eventually, opening it. Lastly, if all else fails, you can
+        open the secret door with explosives. If you're on the inside you can
+        open it manually like any other door.
+      </p>
 
       <p>
         From this point on, you'll be attacked if you're not wearing Robes or if
@@ -4036,16 +4243,18 @@
         disappear.
       </blockquote>
 
-      Take the elevator to level 2. If you talk to Gideon of the wackos with IN
-      8 and ask about protection from the Master he'll give you a Psychic
-      Nullifier and you gain 1000 xp. (There is another path through this
-      dialogue for those with modest Intelligence, but it requires you to be a
-      Berserker, and to make <em>and</em> fail Speech checks.) You can also
-      steal it from a wacko of your choice. Use the console to free the
-      prisoners to the south and you get 2000 xp (chuckle). One of them is a boy
-      who won't show up in the European versions; killing him as he goes past
-      does not make you a Childkiller. You can talk to the scientists and guards
-      if you want.
+      <p>
+        Take the elevator to level 2. If you talk to Gideon of the wackos with
+        IN 8 and ask about protection from the Master he'll give you a Psychic
+        Nullifier and you gain 1000 xp. (There is another path through this
+        dialogue for those with modest Intelligence, but it requires you to be a
+        Berserker, and to make <em>and</em> fail Speech checks.) You can also
+        steal it from a wacko of your choice. Use the console to free the
+        prisoners to the south and you get 2000 xp (chuckle). One of them is a
+        boy who won't show up in the European versions; killing him as he goes
+        past does not make you a Childkiller. You can talk to the scientists and
+        guards if you want.
+      </p>
 
       <p>
         On level 3 you may run into Jeremiah again if you didn't kill him; don't
@@ -4073,22 +4282,25 @@
         critters using that prototype).
       </blockquote>
 
-      Back to level 3 (and let's not mess with the bomb for now). When you enter
-      the corridor of flesh to the right, you'll need a Psychic Nullifier in
-      your inventory or the Mental Block perk, or you'll suffer up to six mental
-      attacks (you're more vulnerable with a high PE, so Booze will protect too,
-      sort of). The first three only deal damage, more if you have a high PE.
-      The fourth will deal more damage, give you a crippled eye (can be healed
-      as usual) and lower your PE permanently by 1. The fifth will only deal
-      significant damage if you're a Berserker and/or a Childkiller, but will
-      lower your IN permanently by 1. The sixth doesn't deal any damage, but
-      will lower your IN and PE yet again by 1 permanently (which is bad
-      enough). Your NPCs if you have any will also take increasing amounts of
-      damage, always more if you're a Berserker or Childkiller, and what's more
-      they won't be protected by Mental Block, although they'll be completely
-      safe if you have the Psychic Nullifier (which means that they all picked
-      up one too, I suppose). Sweet innocent Dogmeat is unaffected, though. Once
-      you've been through the corridor you won't be hit again if you go back.
+      <p>
+        Back to level 3 (and let's not mess with the bomb for now). When you
+        enter the corridor of flesh to the right, you'll need a Psychic
+        Nullifier in your inventory or the Mental Block perk, or you'll suffer
+        up to six mental attacks (you're more vulnerable with a high PE, so
+        Booze will protect too, sort of). The first three only deal damage, more
+        if you have a high PE. The fourth will deal more damage, give you a
+        crippled eye (can be healed as usual) and lower your PE permanently by
+        1. The fifth will only deal significant damage if you're a Berserker
+        and/or a Childkiller, but will lower your IN permanently by 1. The sixth
+        doesn't deal any damage, but will lower your IN and PE yet again by 1
+        permanently (which is bad enough). Your NPCs if you have any will also
+        take increasing amounts of damage, always more if you're a Berserker or
+        Childkiller, and what's more they won't be protected by Mental Block,
+        although they'll be completely safe if you have the Psychic Nullifier
+        (which means that they all picked up one too, I suppose). Sweet innocent
+        Dogmeat is unaffected, though. Once you've been through the corridor you
+        won't be hit again if you go back.
+      </p>
 
       <p>
         At the end of the corridor is the Master, and it's here you end up if
@@ -4104,13 +4316,15 @@
         turns hostile instead.
       </blockquote>
 
-      The "diplomatic" solution demands that you carry or have read Vree's
-      autopsy report and that you have IN 7 and good Speech to get all the
-      dialogue options (there's always Mentats). Get the Master to tell you of
-      his plan, say he's got a problem, and then either show him the disk (if
-      you have it), or tell him to ask his female mutants. There are several
-      dialogue paths that lead to combat, so take care. If you succeed, you'll
-      leave dialogue and the 4-minute bomb countdown starts.
+      <p>
+        The "diplomatic" solution demands that you carry or have read Vree's
+        autopsy report and that you have IN 7 and good Speech to get all the
+        dialogue options (there's always Mentats). Get the Master to tell you of
+        his plan, say he's got a problem, and then either show him the disk (if
+        you have it), or tell him to ask his female mutants. There are several
+        dialogue paths that lead to combat, so take care. If you succeed, you'll
+        leave dialogue and the 4-minute bomb countdown starts.
+      </p>
 
       <p>
         If you fight the Master he'll have 500 HP, an assortment of laser
@@ -4164,6 +4378,7 @@
           points of damage.
         </li>
       </ul>
+
       <blockquote class="green_star">
         There's a glitch here you can take advantage of: if you save and then
         load the game, any spawned mutants will have disappeared (and still
@@ -4179,25 +4394,33 @@
         Cathedral this way, though, so watch the timer.
       </blockquote>
 
-      Regardless of whether you make it out or not before the countdown expires,
-      you get to see the explosion movie. If you made it out to the world map,
-      you gain 10,000 xp (for solving Vault 13 quest 2), and if you already
-      destroyed the vats, that means you've finished the game.
+      <p>
+        Regardless of whether you make it out or not before the countdown
+        expires, you get to see the explosion movie. If you made it out to the
+        world map, you gain 10,000 xp (for solving Vault 13 quest 2), and if you
+        already destroyed the vats, that means you've finished the game.
+      </p>
+
       <blockquote class="green_star">
         Any NPCs or items left on the entrance map will be lost once the game
         switches to the "ruins" map.
       </blockquote>
 
-      After being treated to various endings (see the following section), you're
-      teleported to the Vault 13 cavern in front of the vault door. Presently
-      the Overseer shows up and says you have to leave the vault forever.
-      Bastard. If your character is a Berserker or Childkiller, or has the
-      Bloody Mess perk or low karma (<span style="white-space: nowrap">-2</span>
-      or less), you'll automatically draw a gun (in fact a 10mm Pistol is newly
-      created for you) and shoot the Overseer as he's walking away. If you
-      don't, and want to kill him anyway, you can press A for combat mode as
-      soon as dialogue ends, then grab your favourite weapon and let him have
-      it. After that, credits.
+      <p>
+        After being treated to various endings (see the following section),
+        you're teleported to the Vault 13 cavern in front of the vault door.
+        Presently the Overseer shows up and says you have to leave the vault
+        forever. Bastard. If your character is a Berserker or Childkiller, or
+        has the Bloody Mess perk or low karma (<span style="white-space: nowrap"
+          >-2</span
+        >
+        or less), you'll automatically draw a gun (in fact a 10mm Pistol is
+        newly created for you) and shoot the Overseer as he's walking away. If
+        you don't, and want to kill him anyway, you can press A for combat mode
+        as soon as dialogue ends, then grab your favourite weapon and let him
+        have it. After that, credits.
+      </p>
+
       <blockquote class="green_star">
         Note that you gain 10 karma when leaving the exploding cathedral and 5
         karma when leaving the exploding base (having already gained 5 when
@@ -4227,8 +4450,11 @@
         worth 250 xp, by the way...
       </blockquote>
 
-      If you're thinking of playing the game again (of course you should), here
-      are a few suggestions:
+      <p>
+        If you're thinking of playing the game again (of course you should),
+        here are a few suggestions:
+      </p>
+
       <ul>
         <li>
           Play a pure HtH fighter if you didn't already, or play a cold-blooded
@@ -4271,22 +4497,26 @@
       <hr />
 
       <h3 id="end">Endings</h3>
+
       <blockquote class="opening-quote">
         "Excuse me while I gloat..."<br />
         --The Vault Dweller
       </blockquote>
 
-      You always get the first bit about the Master being killed, the vats
-      destroyed and the mutant army driven east. (In fact there are two
-      different endings depending on whether the game thinks you destroyed the
-      Cathedral or the Military Base first. But the two have been mixed up.)
-      After that you get the local endings described below - all of them which
-      are applicable, even if you never went there. Note that there are ways not
-      to get an ending at all for certain locations, for instance if you kill
-      both Killian and Gizmo in Junktown. The invasion endings in Necropolis and
-      Shady Sands take precedence to the others. Damaging the control computer
-      in the Military Base affects the time limits for the Hub and Shady Sands,
-      but does not in itself trigger the related endings.
+      <p>
+        You always get the first bit about the Master being killed, the vats
+        destroyed and the mutant army driven east. (In fact there are two
+        different endings depending on whether the game thinks you destroyed the
+        Cathedral or the Military Base first. But the two have been mixed up.)
+        After that you get the local endings described below - all of them which
+        are applicable, even if you never went there. Note that there are ways
+        not to get an ending at all for certain locations, for instance if you
+        kill both Killian and Gizmo in Junktown. The invasion endings in
+        Necropolis and Shady Sands take precedence to the others. Damaging the
+        control computer in the Military Base affects the time limits for the
+        Hub and Shady Sands, but does not in itself trigger the related endings.
+      </p>
+
       <h4>Necropolis</h4>
       <ol>
         <li>
@@ -4298,6 +4528,7 @@
       </ol>
       There are two similar pictures for Necropolis, one bluish with lit
       streetlights for ending 3, one brownish for endings 1-2.
+
       <blockquote class="green_star">
         Ending 2 checks only whether there is a water source in Necropolis at
         the end of the game. You can take the chip, wait until the ghouls are
@@ -4323,6 +4554,7 @@
       </ol>
       There are two pictures for Shady Sands, one "razed" picture for endings
       4-5, one "non-razed" picture for endings 1-3.
+
       <blockquote class="green_star">
         If Tandi is kidnapped and not rescued (including if she's in your party
         at the end of the game) she's considered dead for this purpose.
@@ -4365,18 +4597,21 @@
       <hr />
 
       <h3 id="encounter">Encounters</h3>
+
       <blockquote class="opening-quote">
         "I think it's Skunk, the three-eyed giant catfish, that keeps scaring
         everything away from my spot."<br />
         --Fisherman
       </blockquote>
 
-      As you move across the barren face of the map you'll sometimes encounter
-      beings and bodies and booty littering the desert. With a high Luck you'll
-      find more encounters like traders and items and fewer horrible attacks.
-      Some of the latter are extremely unlikely (and in fact impossible to get
-      with a LK of 7 or more). With the Ranger perk you'll also get less
-      unpleasant encounters.
+      <p>
+        As you move across the barren face of the map you'll sometimes encounter
+        beings and bodies and booty littering the desert. With a high Luck
+        you'll find more encounters like traders and items and fewer horrible
+        attacks. Some of the latter are extremely unlikely (and in fact
+        impossible to get with a LK of 7 or more). With the Ranger perk you'll
+        also get less unpleasant encounters.
+      </p>
 
       <p>
         <strong>Mountain:</strong> sheer cliffs, rough terrain, rats, mole rats,
@@ -4494,16 +4729,18 @@
         drop it again and loot it when convenient.
       </blockquote>
 
-      If you're a Childkiller you'll probably run into Avellone the bounty
-      hunter on the world map, whereupon he tries to kill you. This can happen
-      everywhere and the chance is 50% each time there is an encounter, less if
-      you have the Ranger perk. He and his crew will have slightly different
-      equipment compared to the Boneyard map; most notably, there is no Rocket
-      Launcher. If you leave the encounter without having killed Avellone you'll
-      encounter him again with an identical posse on the world map or in the
-      Boneyard, no matter if you killed any of the thugs. Players with the
-      European version of the game don't miss much as they get to meet the merry
-      gang in the Boneyard as usual.
+      <p>
+        If you're a Childkiller you'll probably run into Avellone the bounty
+        hunter on the world map, whereupon he tries to kill you. This can happen
+        everywhere and the chance is 50% each time there is an encounter, less
+        if you have the Ranger perk. He and his crew will have slightly
+        different equipment compared to the Boneyard map; most notably, there is
+        no Rocket Launcher. If you leave the encounter without having killed
+        Avellone you'll encounter him again with an identical posse on the world
+        map or in the Boneyard, no matter if you killed any of the thugs.
+        Players with the European version of the game don't miss much as they
+        get to meet the merry gang in the Boneyard as usual.
+      </p>
 
       <p>
         If for some mysterious reason you took the Mysterious Stranger perk, the
@@ -4576,15 +4813,19 @@
       <hr />
 
       <h3 id="npc">NPCs</h3>
+
       <blockquote class="opening-quote">
         "I don't like kids."<br />
         --Katja
       </blockquote>
 
-      In <em>Fallout</em>, NPCs pretty much keep their own counsel. You don't
-      know their stats and can't tell them what to do. They can carry stuff and
-      provide extra firepower, which is good. They get in the way a lot and must
-      be shepherded through the last two areas of the game, which is bad.
+      <p>
+        In <em>Fallout</em>, NPCs pretty much keep their own counsel. You don't
+        know their stats and can't tell them what to do. They can carry stuff
+        and provide extra firepower, which is good. They get in the way a lot
+        and must be shepherded through the last two areas of the game, which is
+        bad.
+      </p>
 
       <p>
         In fact, due to the bartering bug in <em>Fallout</em> you can make them
@@ -4615,11 +4856,13 @@
         Katja or Tandi can use them but not Tycho.
       </blockquote>
 
-      When you want an NPC to switch weapons, tell them to use their best weapon
-      in the next battle. This way they'll de-equip any weapon so you can steal
-      or barter it from them (for instance if you want them to use something
-      else). Their latest equipped weapon may not show up in the barter
-      interface, but should be accessible if you use Steal.
+      <p>
+        When you want an NPC to switch weapons, tell them to use their best
+        weapon in the next battle. This way they'll de-equip any weapon so you
+        can steal or barter it from them (for instance if you want them to use
+        something else). Their latest equipped weapon may not show up in the
+        barter interface, but should be accessible if you use Steal.
+      </p>
 
       <p>
         NPCs won't turn on you if you accidentally hit them in combat. However,
@@ -4668,7 +4911,7 @@
         to have a few spares, it was likely to crash the game eventually.
       </blockquote>
 
-      The various NPCs are:
+      <p>The various NPCs are:</p>
 
       <p><strong>Ian:</strong> Found in Shady Sands.</p>
       <ul>
@@ -4711,6 +4954,7 @@
           too vulnerable.
         </li>
       </ul>
+
       <blockquote class="green_star">
         To unequip Tandi's current weapon, knock her out and take it from her.
         If you don't want to give her a chance to equip her Knife you can steal
@@ -4732,6 +4976,7 @@
           game (but which one of them isn't).
         </li>
       </ul>
+
       <blockquote class="green_star">
         Many have dedicated themselves to keeping Dogmeat alive throughout the
         entire game, notably using the yellow forcefields to trap him in the
@@ -4770,6 +5015,7 @@
           guy. The best NPC.
         </li>
       </ul>
+
       <blockquote class="green_star">
         Daggar points out: "If you can find it, there is one better weapon for
         Tycho than the Sniper Rifle: the Red Ryder LE BB Gun. While it is less
@@ -4802,18 +5048,21 @@
       <hr />
 
       <h3 id="stupid">Stupid</h3>
+
       <blockquote class="opening-quote">
         "Would someone please remove this mental abomination?"<br />
         --Brotherhood Elder
       </blockquote>
 
-      Well, writing a stupid section isn't as exciting as for
-      <em>Fallout 2</em> since there's not much to write about. The stupid game
-      in <em>Fallout</em> basically means rushing through every area, shooting
-      some people up for no apparent reason and grabbing whatever loot is to be
-      had, but not much else. Stupid dialogues are very brief and they do not in
-      any way connect your character to the world in any meaningful or
-      role-playing-like fashion.
+      <p>
+        Well, writing a stupid section isn't as exciting as for
+        <em>Fallout 2</em> since there's not much to write about. The stupid
+        game in <em>Fallout</em> basically means rushing through every area,
+        shooting some people up for no apparent reason and grabbing whatever
+        loot is to be had, but not much else. Stupid dialogues are very brief
+        and they do not in any way connect your character to the world in any
+        meaningful or role-playing-like fashion.
+      </p>
 
       <p>
         Of course there are things you can do that are relatively
@@ -4951,14 +5200,18 @@
       <hr />
 
       <h3 id="combat">Combat</h3>
+
       <blockquote class="opening-quote">
         "It was terrible. It had these big, pointy teeth."<br />
         --The Vault Dweller
       </blockquote>
 
-      This is not supposed to be a be-all and end-all guide to
-      <em>Fallout</em> tactics, just a collection of hints and comments that fit
-      under a common heading.
+      <p>
+        This is not supposed to be a be-all and end-all guide to
+        <em>Fallout</em> tactics, just a collection of hints and comments that
+        fit under a common heading.
+      </p>
+
       <h4>General</h4>
       You can alter combat difficulty for a single battle if you're having
       problems. Of course, most often you also have the option to leave and
@@ -5302,25 +5555,29 @@
       <hr />
 
       <h3 id="items">Items</h3>
-      <blockquote>
+
+      <blockquote id="opening-quote">
         "Oooh, pretty, pretty stuff. Why is the moon?"<br />
         --Slappy
       </blockquote>
 
-      Locations for common items represent where you're likely to first find
-      them, unless you're using stupid short cut techniques. Non-special random
-      encounters are not considered in this regard, unless the item in question
-      is very rare. If an item appears in more than two or three places in an
-      area I haven't bothered to specify names or locations. Names are given as
-      they appear in the game (e.g. with a missing apostrophe in "Deans
-      Electronics"). These tables are preferably viewed in 800x600 resolution or
-      better.
+      <p>
+        Locations for common items represent where you're likely to first find
+        them, unless you're using stupid short cut techniques. Non-special
+        random encounters are not considered in this regard, unless the item in
+        question is very rare. If an item appears in more than two or three
+        places in an area I haven't bothered to specify names or locations.
+        Names are given as they appear in the game (e.g. with a missing
+        apostrophe in "Deans Electronics"). These tables are preferably viewed
+        in 800x600 resolution or better.
+      </p>
+
       <blockquote class="green_star">
         "(Vault 13)" in the location slot means it's an item which you may start
         with depending on your tag skills.
       </blockquote>
 
-      Armour:
+      <p>Armour:</p>
 
       <p></p>
       <table>
@@ -5405,6 +5662,7 @@
           <td>30</td>
         </tr>
       </table>
+
       <blockquote class="green_star">
         Damage Threshold/Damage Resistance values are given for normal damage,
         which is by far the most common damage type for most of the game. Laser
@@ -5427,7 +5685,7 @@
         The two types of power armour raise your ST by 3 to a maximum of 10.
       </blockquote>
 
-      Weapons:
+      <p>Weapons:</p>
 
       <p></p>
       <table>
@@ -5819,6 +6077,7 @@
           <td>En W</td>
         </tr>
       </table>
+
       <blockquote class="green_star">
         Damage for ranged weapons is per successfully delivered bullet. Damage
         for mêlée weapons is excluding your character's Melee Damage.
@@ -5854,7 +6113,7 @@
         A lit Flare has the exact same damage properties as an unlit Flare.
       </blockquote>
 
-      Ammo:
+      <p>Ammo:</p>
 
       <p></p>
       <table>
@@ -5978,6 +6237,7 @@
           <td>Rocket Launcher</td>
         </tr>
       </table>
+
       <blockquote class="green_star">
         A dash means "don't use this (unless you really, really have to)".
       </blockquote>
@@ -5994,7 +6254,9 @@
         applied somewhere down the line.
       </blockquote>
 
-      Items which can be consumed for an effect (may also have quest use):
+      <p>
+        Items which can be consumed for an effect (may also have quest use):
+      </p>
 
       <p></p>
       <table>
@@ -6104,6 +6366,7 @@
           <td>PE <span style="white-space: nowrap">-1</span></td>
         </tr>
       </table>
+
       <blockquote class="green_star">
         Effects are permanent unless duration is specified. The effect of Psycho
         and Rad-X wears off by one half at a time. Stats raised by chems will
@@ -6151,7 +6414,7 @@
         significant difference when I've tried this, though.
       </blockquote>
 
-      Items which have general use (may also have quest use):
+      <p>Items which have general use (may also have quest use):</p>
 
       <p></p>
       <table>
@@ -6241,6 +6504,7 @@
           <td>Repair +20%</td>
         </tr>
       </table>
+
       <blockquote class="yellow_star">
         Note that the bonuses gained from Lock Picks, Tools and so on may vary
         depending on what script is being used. It could be +10%, +25% or even
@@ -6291,7 +6555,10 @@
         another Stealth Boy and turning it on and off.
       </blockquote>
 
-      Items which you barter for but do not normally have independent existence:
+      <p>
+        Items which you barter for but do not normally have independent
+        existence:
+      </p>
 
       <p></p>
       <table>
@@ -6553,6 +6820,7 @@
           <td>A.k.a. Cat's Paw magazine</td>
         </tr>
       </table>
+
       <blockquote class="green_star">
         You gain 100 xp for reading each holodisk. Whee.
       </blockquote>
@@ -6566,7 +6834,7 @@
         instead of a very small box.
       </blockquote>
 
-      List of addiction effects:
+      <p>List of addiction effects:</p>
 
       <p></p>
       <table>
@@ -6616,6 +6884,7 @@
           <td>7 days</td>
         </tr>
       </table>
+
       <blockquote class="red_star">
         The values within parentheses are the ones I arrived at statistically
         (150 uses) before I knew you can use FIME to find the proper ones. After
@@ -6625,13 +6894,14 @@
       <hr />
 
       <h3 id="addenda">Addenda</h3>
-      <blockquote>
+
+      <blockquote id="opening-quote">
         "Love is what makes the cactus grow! Love is what makes the brahmin
         moo!"<br />
         --Dane
       </blockquote>
 
-      Miscellaneous stuff.
+      <p>Miscellaneous stuff.</p>
       <h4>Talking heads</h4>
       Let's see... the Overseer, Tandi, Aradesh, Killian, Gizmo, Butch, Harold,
       Loxley, Decker, Jain, Set, Harry, Cabbot, Rhombus, Vree, Maxson, Nicole,
