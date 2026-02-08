@@ -1,4 +1,4 @@
-# The (slightly modernized) copies of Per Jorner's Ultimate Fallout 1&2 Guides
+## The (slightly modernized) copies of Per Jorner's Ultimate Fallout 1&2 Guides
 
 Modernized edits of the excellent Fallout 1&2 guides written by Per Jorner. No changes were made to the text itself.
 
