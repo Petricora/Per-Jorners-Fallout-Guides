@@ -22,12 +22,14 @@ body {
 }
 
 .opening-quote {
-  margin-left: 50%;
+  margin-left: 40%;
   padding-bottom: 5%;
   text-align: right;
   font-style: italic;
 }
 
+
+/* Color-coded comments logic has been moved here */
 .green_star,
 .yellow_star,
 .red_star,
@@ -128,6 +130,7 @@ thead {
   text-align: left;
 }
 
+/* This targets table columns marked as "tabular" and applies formatting */
 table:has(col:nth-child(1).tabular) td:nth-child(1),
 table:has(col:nth-child(2).tabular) td:nth-child(2),
 table:has(col:nth-child(3).tabular) td:nth-child(3),
@@ -148,11 +151,40 @@ caption {
   margin-bottom: 10px;
 }
 
-li {
-  margin-bottom: 5px;
+h4 {
+  margin-bottom: 0;
 }
 
-li ul {
+h4 + p {
+  margin-top: 5px;
+}
+
+li strong + p,
+li strong + ol {
+  margin-top: 5px;
+}
+
+blockquote,
+p + blockquote,
+li + blockquote {
+  margin-top: 15px;
+}
+
+ul > li > ol {
+  margin-bottom: 25px;
+}
+
+ul > li > ul {
+  margin-top: 10px;
+}
+
+ul > li,
+ol > li {
+  margin-bottom: 3px;
+}
+
+ol ul,
+ul ul {
   list-style: disc;
 }
 
@@ -161,6 +193,11 @@ kbd {
   background-color: #eee;
   border-radius: 3px;
   border: 1px solid #b4b4b4;
+}
+
+code {
+  font-feature-settings: normal;
+  white-space: nowrap;
 }
 
 .container {
