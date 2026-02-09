@@ -1,3 +1,6 @@
+/* ============================================
+   GENERAL SETTINGS AND NAVIGATION
+   ==========================================*/
 html {
   box-sizing: border-box;
   -ms-text-size-adjust: 100%;
@@ -10,8 +13,43 @@ html {
   box-sizing: inherit;
 }
 
+section,
+nav {
+  border-top: 2px solid #656464;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+a {
+  color: #0080ff;
+}
+
+a:visited {
+  color: #b774cc;
+}
+
+a:hover {
+  color: #0015ff;
+}
+
+a:active {
+  color: #0015ff;
+}
+
+/* ============================================
+   BODY TEXT, AND OPENING QUOTES
+   ==========================================*/
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: sans-serif;
   font-feature-settings:
     "zero" 1,
     "liga" 1;
@@ -21,13 +59,86 @@ body {
   background-repeat: repeat;
 }
 
-.opening-quote {
-  margin-left: 40%;
-  padding-bottom: 5%;
-  text-align: right;
-  font-style: italic;
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px
 }
 
+header p {
+  margin: 0;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header h2 {
+  font-size: 21px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+h2 + p {
+  margin-bottom: 40px;
+}
+
+ul li {
+  list-style: disc;
+}
+
+.opening-quote {
+  margin-left: 40%;
+  text-align: right;
+  font-style: italic;
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+.opening-quote p {
+  margin-bottom: 1px;
+  margin-top: 1px;
+}
+
+.opening-quote p:last-of-type {
+  margin-top: 5px;
+}
+
+caption {
+  text-align: left;
+  font-weight: 450;
+  margin-bottom: 10px;
+}
+
+/* Smaller margins benath headers followed by a paragraph */
+h4 {
+  margin-bottom: 0;
+}
+
+h4 + p {
+  margin-top: 5px;
+}
+
+li strong + p {
+  margin-top: 5px;
+}
+/*========================================================*/
+
+li {
+  margin-bottom: 5px;
+}
+
+kbd {
+  white-space: nowrap;
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+}
+
+code {
+  font-feature-settings: normal;
+  white-space: nowrap;
+}
 
 /* Color-coded comments logic has been moved here */
 .green_star,
@@ -36,7 +147,10 @@ body {
 .blue_star {
   position: relative;
   padding-left: 25px;
+  margin-left: 30px;
+  margin-bottom: 15px;
   min-height: 20px;
+  display: block;
 }
 
 .green_star::before,
@@ -69,31 +183,9 @@ body {
   background-image: url("star2.gif");
 }
 
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-a {
-  color: #0080ff;
-}
-
-a:visited {
-  color: #b774cc;
-}
-
-a:hover {
-  color: #0015ff;
-}
-
-a:active {
-  color: #0015ff;
-}
-
+/* ============================================
+   TABLE FORMATTING FOR "TABULAR" COOLUMNS
+   ==========================================*/
 table,
 th,
 td {
@@ -145,60 +237,10 @@ table:has(col:nth-child(10).tabular) td:nth-child(10) {
   padding-left: 10px;
 }
 
-caption {
-  text-align: left;
-  font-weight: 450;
-  margin-bottom: 10px;
-}
 
-h4 {
-  margin-bottom: 0;
-}
-
-h4 + p {
-  margin-top: 5px;
-}
-
-li strong + p,
-li strong + ol {
-  margin-top: 5px;
-}
-
-blockquote,
-p + blockquote,
-li + blockquote {
-  margin-top: 15px;
-}
-
-ul > li > ol {
-  margin-bottom: 25px;
-}
-
-ul > li > ul {
-  margin-top: 10px;
-}
-
-ul > li,
-ol > li {
-  margin-bottom: 3px;
-}
-
-ol ul,
-ul ul {
-  list-style: disc;
-}
-
-kbd {
-  white-space: nowrap;
-  background-color: #eee;
-  border-radius: 3px;
-  border: 1px solid #b4b4b4;
-}
-
-code {
-  font-feature-settings: normal;
-  white-space: nowrap;
-}
+/* ============================================
+   VARIOUS
+  ===========================================*/
 
 .container {
   margin-right: auto;
@@ -220,6 +262,8 @@ code {
 }
 
 .btn {
+  position: absolute;
+  right: 12%;
   background-color: #efefef;
   color: #000000;
   font-size: 21px;
@@ -227,6 +271,9 @@ code {
   border-radius: 4px;
   line-height: 1.3333333;
   cursor: pointer;
+  padding: 2px 4px;
+  text-decoration: none;
+  margin-right: 12px;
 }
 
 .btn:hover {
@@ -240,10 +287,15 @@ code {
 
 .btn-to-top {
   position: fixed;
-  right: 100px;
-  bottom: 5px;
-  z-index: 0;
+  right: 5%;
+  bottom: 1%;
   padding: 0.25em;
+  background-color: #efefef;
+  color: #000000;
+  font-size: 21px;
+  border: 1px solid #2e6da4;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 .index {
