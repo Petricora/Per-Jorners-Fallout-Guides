@@ -13,5 +13,3 @@ Contains a backup of the original work (in the [files](https://github.com/Petric
 
 ---
 <img height="500" alt="Table Screenshot" src="https://github.com/user-attachments/assets/e11b9e26-e721-43b8-933e-618b18948dbf" />
-
-<img height="500" alt="Text Screenshot" src="https://github.com/user-attachments/assets/10a8c819-f14f-451c-8e9d-c2bee0f8112b" />
