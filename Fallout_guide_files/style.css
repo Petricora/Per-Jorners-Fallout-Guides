@@ -110,7 +110,7 @@ caption {
   margin-bottom: 10px;
 }
 
-/* Smaller margins benath headers followed by a paragraph */
+/* Smaller margins beneath headers followed by a paragraph */
 h4 {
   margin-bottom: 0;
 }
@@ -184,7 +184,7 @@ code {
 }
 
 /* ============================================
-   TABLE FORMATTING FOR "TABULAR" COOLUMNS
+   TABLE FORMATTING FOR "TABULAR" COLUMNS
    ==========================================*/
 table,
 th,
