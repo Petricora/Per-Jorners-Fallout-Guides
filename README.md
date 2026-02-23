@@ -6,7 +6,7 @@ Contains a backup of the original work (in the [files](https://github.com/Petric
 
 ---
 - Restored the background from the original version.
-- Justified the text body (inital reason for this entire endeavor).
+- Justified the text body (the initial reason for this entire endeavor).
 - Moved style elements from HTML to CSS.
 - Used more modern HTML conventions (e.g. `<b>` -> `<strong>`).
 - Reformatted the tables for readability.
